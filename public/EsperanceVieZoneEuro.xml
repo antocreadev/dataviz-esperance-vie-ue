@@ -1,0 +1,372 @@
+ 
+<?xml version="1.0" encoding="utf-8"?>
+<Root xmlns:wb="http://www.worldbank.org">
+  <data>
+   <record>
+      <field name="Country or Area" key="EUU">Union européenne</field>
+      <field name="Item" key="SP.DYN.LE00.IN">Espérance de vie à la naissance, total (années)</field>
+      <field name="Year">1960</field>
+      <field name="Value">69.0208666711269</field>
+    </record>
+    <record>
+      <field name="Country or Area" key="EUU">Union européenne</field>
+      <field name="Item" key="SP.DYN.LE00.IN">Espérance de vie à la naissance, total (années)</field>
+      <field name="Year">1961</field>
+      <field name="Value">69.4122119297805</field>
+    </record>
+    <record>
+      <field name="Country or Area" key="EUU">Union européenne</field>
+      <field name="Item" key="SP.DYN.LE00.IN">Espérance de vie à la naissance, total (années)</field>
+      <field name="Year">1962</field>
+      <field name="Value">69.3183617049612</field>
+    </record>
+    <record>
+      <field name="Country or Area" key="EUU">Union européenne</field>
+      <field name="Item" key="SP.DYN.LE00.IN">Espérance de vie à la naissance, total (années)</field>
+      <field name="Year">1963</field>
+      <field name="Value">69.6128515558842</field>
+    </record>
+    <record>
+      <field name="Country or Area" key="EUU">Union européenne</field>
+      <field name="Item" key="SP.DYN.LE00.IN">Espérance de vie à la naissance, total (années)</field>
+      <field name="Year">1964</field>
+      <field name="Value">70.0308426943675</field>
+    </record>
+    <record>
+      <field name="Country or Area" key="EUU">Union européenne</field>
+      <field name="Item" key="SP.DYN.LE00.IN">Espérance de vie à la naissance, total (années)</field>
+      <field name="Year">1965</field>
+      <field name="Value">70.1571547543519</field>
+    </record>
+    <record>
+      <field name="Country or Area" key="EUU">Union européenne</field>
+      <field name="Item" key="SP.DYN.LE00.IN">Espérance de vie à la naissance, total (années)</field>
+      <field name="Year">1966</field>
+      <field name="Value">70.4281534043982</field>
+    </record>
+    <record>
+      <field name="Country or Area" key="EUU">Union européenne</field>
+      <field name="Item" key="SP.DYN.LE00.IN">Espérance de vie à la naissance, total (années)</field>
+      <field name="Year">1967</field>
+      <field name="Value">70.4736028609287</field>
+    </record>
+    <record>
+      <field name="Country or Area" key="EUU">Union européenne</field>
+      <field name="Item" key="SP.DYN.LE00.IN">Espérance de vie à la naissance, total (années)</field>
+      <field name="Year">1968</field>
+      <field name="Value">70.5841337700098</field>
+    </record>
+    <record>
+      <field name="Country or Area" key="EUU">Union européenne</field>
+      <field name="Item" key="SP.DYN.LE00.IN">Espérance de vie à la naissance, total (années)</field>
+      <field name="Year">1969</field>
+      <field name="Value">70.5334585637463</field>
+    </record>
+    <record>
+      <field name="Country or Area" key="EUU">Union européenne</field>
+      <field name="Item" key="SP.DYN.LE00.IN">Espérance de vie à la naissance, total (années)</field>
+      <field name="Year">1970</field>
+      <field name="Value">70.8582595093845</field>
+    </record>
+    <record>
+      <field name="Country or Area" key="EUU">Union européenne</field>
+      <field name="Item" key="SP.DYN.LE00.IN">Espérance de vie à la naissance, total (années)</field>
+      <field name="Year">1971</field>
+      <field name="Value">70.9388988454688</field>
+    </record>
+    <record>
+      <field name="Country or Area" key="EUU">Union européenne</field>
+      <field name="Item" key="SP.DYN.LE00.IN">Espérance de vie à la naissance, total (années)</field>
+      <field name="Year">1972</field>
+      <field name="Value">71.3130698458461</field>
+    </record>
+    <record>
+      <field name="Country or Area" key="EUU">Union européenne</field>
+      <field name="Item" key="SP.DYN.LE00.IN">Espérance de vie à la naissance, total (années)</field>
+      <field name="Year">1973</field>
+      <field name="Value">71.4222083745895</field>
+    </record>
+    <record>
+      <field name="Country or Area" key="EUU">Union européenne</field>
+      <field name="Item" key="SP.DYN.LE00.IN">Espérance de vie à la naissance, total (années)</field>
+      <field name="Year">1974</field>
+      <field name="Value">71.7263353694605</field>
+    </record>
+    <record>
+      <field name="Country or Area" key="EUU">Union européenne</field>
+      <field name="Item" key="SP.DYN.LE00.IN">Espérance de vie à la naissance, total (années)</field>
+      <field name="Year">1975</field>
+      <field name="Value">71.8078433730015</field>
+    </record>
+    <record>
+      <field name="Country or Area" key="EUU">Union européenne</field>
+      <field name="Item" key="SP.DYN.LE00.IN">Espérance de vie à la naissance, total (années)</field>
+      <field name="Year">1976</field>
+      <field name="Value">72.0344417126102</field>
+    </record>
+    <record>
+      <field name="Country or Area" key="EUU">Union européenne</field>
+      <field name="Item" key="SP.DYN.LE00.IN">Espérance de vie à la naissance, total (années)</field>
+      <field name="Year">1977</field>
+      <field name="Value">72.2955228282209</field>
+    </record>
+    <record>
+      <field name="Country or Area" key="EUU">Union européenne</field>
+      <field name="Item" key="SP.DYN.LE00.IN">Espérance de vie à la naissance, total (années)</field>
+      <field name="Year">1978</field>
+      <field name="Value">72.4337042669379</field>
+    </record>
+    <record>
+      <field name="Country or Area" key="EUU">Union européenne</field>
+      <field name="Item" key="SP.DYN.LE00.IN">Espérance de vie à la naissance, total (années)</field>
+      <field name="Year">1979</field>
+      <field name="Value">72.6980522758289</field>
+    </record>
+    <record>
+      <field name="Country or Area" key="EUU">Union européenne</field>
+      <field name="Item" key="SP.DYN.LE00.IN">Espérance de vie à la naissance, total (années)</field>
+      <field name="Year">1980</field>
+      <field name="Value">72.7512685042031</field>
+    </record>
+    <record>
+      <field name="Country or Area" key="EUU">Union européenne</field>
+      <field name="Item" key="SP.DYN.LE00.IN">Espérance de vie à la naissance, total (années)</field>
+      <field name="Year">1981</field>
+      <field name="Value">73.0896318295975</field>
+    </record>
+    <record>
+      <field name="Country or Area" key="EUU">Union européenne</field>
+      <field name="Item" key="SP.DYN.LE00.IN">Espérance de vie à la naissance, total (années)</field>
+      <field name="Year">1982</field>
+      <field name="Value">73.3665906978055</field>
+    </record>
+    <record>
+      <field name="Country or Area" key="EUU">Union européenne</field>
+      <field name="Item" key="SP.DYN.LE00.IN">Espérance de vie à la naissance, total (années)</field>
+      <field name="Year">1983</field>
+      <field name="Value">73.4111651127604</field>
+    </record>
+    <record>
+      <field name="Country or Area" key="EUU">Union européenne</field>
+      <field name="Item" key="SP.DYN.LE00.IN">Espérance de vie à la naissance, total (années)</field>
+      <field name="Year">1984</field>
+      <field name="Value">73.6693117377523</field>
+    </record>
+    <record>
+      <field name="Country or Area" key="EUU">Union européenne</field>
+      <field name="Item" key="SP.DYN.LE00.IN">Espérance de vie à la naissance, total (années)</field>
+      <field name="Year">1985</field>
+      <field name="Value">73.7741909037354</field>
+    </record>
+    <record>
+      <field name="Country or Area" key="EUU">Union européenne</field>
+      <field name="Item" key="SP.DYN.LE00.IN">Espérance de vie à la naissance, total (années)</field>
+      <field name="Year">1986</field>
+      <field name="Value">74.0380496340888</field>
+    </record>
+    <record>
+      <field name="Country or Area" key="EUU">Union européenne</field>
+      <field name="Item" key="SP.DYN.LE00.IN">Espérance de vie à la naissance, total (années)</field>
+      <field name="Year">1987</field>
+      <field name="Value">74.2664010110142</field>
+    </record>
+    <record>
+      <field name="Country or Area" key="EUU">Union européenne</field>
+      <field name="Item" key="SP.DYN.LE00.IN">Espérance de vie à la naissance, total (années)</field>
+      <field name="Year">1988</field>
+      <field name="Value">74.4684855280488</field>
+    </record>
+    <record>
+      <field name="Country or Area" key="EUU">Union européenne</field>
+      <field name="Item" key="SP.DYN.LE00.IN">Espérance de vie à la naissance, total (années)</field>
+      <field name="Year">1989</field>
+      <field name="Value">74.6294277813831</field>
+    </record>
+    <record>
+      <field name="Country or Area" key="EUU">Union européenne</field>
+      <field name="Item" key="SP.DYN.LE00.IN">Espérance de vie à la naissance, total (années)</field>
+      <field name="Year">1990</field>
+      <field name="Value">74.7306625049943</field>
+    </record>
+    <record>
+      <field name="Country or Area" key="EUU">Union européenne</field>
+      <field name="Item" key="SP.DYN.LE00.IN">Espérance de vie à la naissance, total (années)</field>
+      <field name="Year">1991</field>
+      <field name="Value">74.8169001469363</field>
+    </record>
+    <record>
+      <field name="Country or Area" key="EUU">Union européenne</field>
+      <field name="Item" key="SP.DYN.LE00.IN">Espérance de vie à la naissance, total (années)</field>
+      <field name="Year">1992</field>
+      <field name="Value">75.1318432116334</field>
+    </record>
+    <record>
+      <field name="Country or Area" key="EUU">Union européenne</field>
+      <field name="Item" key="SP.DYN.LE00.IN">Espérance de vie à la naissance, total (années)</field>
+      <field name="Year">1993</field>
+      <field name="Value">75.2612216584668</field>
+    </record>
+    <record>
+      <field name="Country or Area" key="EUU">Union européenne</field>
+      <field name="Item" key="SP.DYN.LE00.IN">Espérance de vie à la naissance, total (années)</field>
+      <field name="Year">1994</field>
+      <field name="Value">75.5291036158313</field>
+    </record>
+    <record>
+      <field name="Country or Area" key="EUU">Union européenne</field>
+      <field name="Item" key="SP.DYN.LE00.IN">Espérance de vie à la naissance, total (années)</field>
+      <field name="Year">1995</field>
+      <field name="Value">75.6768684347217</field>
+    </record>
+    <record>
+      <field name="Country or Area" key="EUU">Union européenne</field>
+      <field name="Item" key="SP.DYN.LE00.IN">Espérance de vie à la naissance, total (années)</field>
+      <field name="Year">1996</field>
+      <field name="Value">75.9279686713697</field>
+    </record>
+    <record>
+      <field name="Country or Area" key="EUU">Union européenne</field>
+      <field name="Item" key="SP.DYN.LE00.IN">Espérance de vie à la naissance, total (années)</field>
+      <field name="Year">1997</field>
+      <field name="Value">76.2455191472496</field>
+    </record>
+    <record>
+      <field name="Country or Area" key="EUU">Union européenne</field>
+      <field name="Item" key="SP.DYN.LE00.IN">Espérance de vie à la naissance, total (années)</field>
+      <field name="Year">1998</field>
+      <field name="Value">76.5145171639727</field>
+    </record>
+    <record>
+      <field name="Country or Area" key="EUU">Union européenne</field>
+      <field name="Item" key="SP.DYN.LE00.IN">Espérance de vie à la naissance, total (années)</field>
+      <field name="Year">1999</field>
+      <field name="Value">76.7485819427703</field>
+    </record>
+    <record>
+      <field name="Country or Area" key="EUU">Union européenne</field>
+      <field name="Item" key="SP.DYN.LE00.IN">Espérance de vie à la naissance, total (années)</field>
+      <field name="Year">2000</field>
+      <field name="Value">77.0784477991604</field>
+    </record>
+    <record>
+      <field name="Country or Area" key="EUU">Union européenne</field>
+      <field name="Item" key="SP.DYN.LE00.IN">Espérance de vie à la naissance, total (années)</field>
+      <field name="Year">2001</field>
+      <field name="Value">77.4254833773953</field>
+    </record>
+    <record>
+      <field name="Country or Area" key="EUU">Union européenne</field>
+      <field name="Item" key="SP.DYN.LE00.IN">Espérance de vie à la naissance, total (années)</field>
+      <field name="Year">2002</field>
+      <field name="Value">77.5327215413442</field>
+    </record>
+    <record>
+      <field name="Country or Area" key="EUU">Union européenne</field>
+      <field name="Item" key="SP.DYN.LE00.IN">Espérance de vie à la naissance, total (années)</field>
+      <field name="Year">2003</field>
+      <field name="Value">77.5906619590104</field>
+    </record>
+    <record>
+      <field name="Country or Area" key="EUU">Union européenne</field>
+      <field name="Item" key="SP.DYN.LE00.IN">Espérance de vie à la naissance, total (années)</field>
+      <field name="Year">2004</field>
+      <field name="Value">78.1157575976712</field>
+    </record>
+    <record>
+      <field name="Country or Area" key="EUU">Union européenne</field>
+      <field name="Item" key="SP.DYN.LE00.IN">Espérance de vie à la naissance, total (années)</field>
+      <field name="Year">2005</field>
+      <field name="Value">78.2726411417789</field>
+    </record>
+    <record>
+      <field name="Country or Area" key="EUU">Union européenne</field>
+      <field name="Item" key="SP.DYN.LE00.IN">Espérance de vie à la naissance, total (années)</field>
+      <field name="Year">2006</field>
+      <field name="Value">78.6689232474368</field>
+    </record>
+    <record>
+      <field name="Country or Area" key="EUU">Union européenne</field>
+      <field name="Item" key="SP.DYN.LE00.IN">Espérance de vie à la naissance, total (années)</field>
+      <field name="Year">2007</field>
+      <field name="Value">78.9020360375354</field>
+    </record>
+    <record>
+      <field name="Country or Area" key="EUU">Union européenne</field>
+      <field name="Item" key="SP.DYN.LE00.IN">Espérance de vie à la naissance, total (années)</field>
+      <field name="Year">2008</field>
+      <field name="Value">79.125498846821</field>
+    </record>
+    <record>
+      <field name="Country or Area" key="EUU">Union européenne</field>
+      <field name="Item" key="SP.DYN.LE00.IN">Espérance de vie à la naissance, total (années)</field>
+      <field name="Year">2009</field>
+      <field name="Value">79.3572283106471</field>
+    </record>
+    <record>
+      <field name="Country or Area" key="EUU">Union européenne</field>
+      <field name="Item" key="SP.DYN.LE00.IN">Espérance de vie à la naissance, total (années)</field>
+      <field name="Year">2010</field>
+      <field name="Value">79.6294260462919</field>
+    </record>
+    <record>
+      <field name="Country or Area" key="EUU">Union européenne</field>
+      <field name="Item" key="SP.DYN.LE00.IN">Espérance de vie à la naissance, total (années)</field>
+      <field name="Year">2011</field>
+      <field name="Value">80.137772913297</field>
+    </record>
+    <record>
+      <field name="Country or Area" key="EUU">Union européenne</field>
+      <field name="Item" key="SP.DYN.LE00.IN">Espérance de vie à la naissance, total (années)</field>
+      <field name="Year">2012</field>
+      <field name="Value">80.156888172745</field>
+    </record>
+    <record>
+      <field name="Country or Area" key="EUU">Union européenne</field>
+      <field name="Item" key="SP.DYN.LE00.IN">Espérance de vie à la naissance, total (années)</field>
+      <field name="Year">2013</field>
+      <field name="Value">80.4637409249241</field>
+    </record>
+    <record>
+      <field name="Country or Area" key="EUU">Union européenne</field>
+      <field name="Item" key="SP.DYN.LE00.IN">Espérance de vie à la naissance, total (années)</field>
+      <field name="Year">2014</field>
+      <field name="Value">80.8704475592144</field>
+    </record>
+    <record>
+      <field name="Country or Area" key="EUU">Union européenne</field>
+      <field name="Item" key="SP.DYN.LE00.IN">Espérance de vie à la naissance, total (années)</field>
+      <field name="Year">2015</field>
+      <field name="Value">80.5668071415956</field>
+    </record>
+    <record>
+      <field name="Country or Area" key="EUU">Union européenne</field>
+      <field name="Item" key="SP.DYN.LE00.IN">Espérance de vie à la naissance, total (années)</field>
+      <field name="Year">2016</field>
+      <field name="Value">80.9498646420543</field>
+    </record>
+    <record>
+      <field name="Country or Area" key="EUU">Union européenne</field>
+      <field name="Item" key="SP.DYN.LE00.IN">Espérance de vie à la naissance, total (années)</field>
+      <field name="Year">2017</field>
+      <field name="Value">80.9308386443383</field>
+    </record>
+    <record>
+      <field name="Country or Area" key="EUU">Union européenne</field>
+      <field name="Item" key="SP.DYN.LE00.IN">Espérance de vie à la naissance, total (années)</field>
+      <field name="Year">2018</field>
+      <field name="Value">81.0270235057671</field>
+    </record>
+    <record>
+      <field name="Country or Area" key="EUU">Union européenne</field>
+      <field name="Item" key="SP.DYN.LE00.IN">Espérance de vie à la naissance, total (années)</field>
+      <field name="Year">2019</field>
+      <field name="Value">81.31327017295</field>
+    </record>
+    <record>
+      <field name="Country or Area" key="EUU">Union européenne</field>
+      <field name="Item" key="SP.DYN.LE00.IN">Espérance de vie à la naissance, total (années)</field>
+      <field name="Year">2020</field>
+      <field name="Value">80.4637018880586</field>
+    </record>
+   </data>
+     </Root>
