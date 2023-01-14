@@ -246,7 +246,6 @@ export default function ChartGlobalLifeSpanInEU() {
     }
   }, [data]);
   // --- TEST IF DATA EXIST ---
-  if (isLoadingData === true) return <p>Loading...</p>; // loading
   if (!data || !options) return <p>No data exist</p>; // no data
   return <ReactEchart id="chart" option={options} />;
 }
