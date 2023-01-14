@@ -11,7 +11,7 @@ export default function ChartGlobalLifeSpanInEU() {
   // --- FETCH DATA  ---
   useEffect(() => {
     setLoadingData(true);
-    fetch("http://localhost:3000/api/hello")
+    fetch("https://dashboard.heroku.com/api/hello")
       .then((res) => res.json())
       .then((data) => {
         setData(data);
@@ -246,6 +246,7 @@ export default function ChartGlobalLifeSpanInEU() {
     }
   }, [data]);
   // --- TEST IF DATA EXIST ---
+  if (isLoadingData === true) return <p>Loading...</p>; // loading
   if (!data || !options) return <p>No data exist</p>; // no data
   return <ReactEchart id="chart" option={options} />;
 }
