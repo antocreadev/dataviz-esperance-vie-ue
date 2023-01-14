@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Root xmlns:wb="http://www.worldbank.org">
+   <data>
+<!-- Allemagne -->
+    <record>
+      <field name="Country or Area" key="DEU">Allemagne</field>
+      <field name="Item" key="SP.DYN.LE00.IN">Espérance de vie à la naissance, total (années)</field>
+      <field name="Year">2020</field>
+      <field name="Value">80.9414634146342</field>
+    </record>
+<!-- Autriche -->
+    <record>
+      <field name="Country or Area" key="AUT">Autriche</field>
+      <field name="Item" key="SP.DYN.LE00.IN">Espérance de vie à la naissance, total (années)</field>
+      <field name="Year">2020</field>
+      <field name="Value">81.1926829268293</field>
+    </record>
+<!-- Belgique -->
+    <record>
+      <field name="Country or Area" key="BEL">Belgique</field>
+      <field name="Item" key="SP.DYN.LE00.IN">Espérance de vie à la naissance, total (années)</field>
+      <field name="Year">2020</field>
+      <field name="Value">80.7951219512195</field>
+    </record>
+<!-- Bulgarie -->
+    <record>
+      <field name="Country or Area" key="BGR">Bulgarie</field>
+      <field name="Item" key="SP.DYN.LE00.IN">Espérance de vie à la naissance, total (années)</field>
+      <field name="Year">2020</field>
+      <field name="Value">73.6073170731707</field>
+    </record>
+<!-- Croatie -->
+    <record>
+      <field name="Country or Area" key="HRV">Croatie</field>
+      <field name="Item" key="SP.DYN.LE00.IN">Espérance de vie à la naissance, total (années)</field>
+      <field name="Year">2020</field>
+      <field name="Value">77.7243902439024</field>
+    </record>
+<!-- Danemark -->
+    <record>
+      <field name="Country or Area" key="DNK">Danemark</field>
+      <field name="Item" key="SP.DYN.LE00.IN">Espérance de vie à la naissance, total (années)</field>
+      <field name="Year">2020</field>
+      <field name="Value">81.5512195121951</field>
+    </record>
+<!-- Espagne -->
+    <record>
+      <field name="Country or Area" key="ESP">Espagne</field>
+      <field name="Item" key="SP.DYN.LE00.IN">Espérance de vie à la naissance, total (années)</field>
+      <field name="Year">2020</field>
+      <field name="Value">82.3341463414634</field>
+    </record>
+
+<!-- Estonie -->
+        <record>
+      <field name="Country or Area" key="EST">Estonie</field>
+      <field name="Item" key="SP.DYN.LE00.IN">Espérance de vie à la naissance, total (années)</field>
+      <field name="Year">2020</field>
+      <field name="Value">78.3463414634146</field>
+    </record>
+
+<!-- Finlande -->
+        <record>
+      <field name="Country or Area" key="FIN">Finlande</field>
+      <field name="Item" key="SP.DYN.LE00.IN">Espérance de vie à la naissance, total (années)</field>
+      <field name="Year">2020</field>
+      <field name="Value">82.1317073170732</field>
+    </record>
+
+    <!-- france -->
+        <record>
+      <field name="Country or Area" key="FRA">France</field>
+      <field name="Item" key="SP.DYN.LE00.IN">Espérance de vie à la naissance, total (années)</field>
+      <field name="Year">2020</field>
+      <field name="Value">82.1756097560976</field>
+    </record>
+    <!-- grèce -->
+        <record>
+      <field name="Country or Area" key="GRC">Grèce</field>
+      <field name="Item" key="SP.DYN.LE00.IN">Espérance de vie à la naissance, total (années)</field>
+      <field name="Year">2020</field>
+      <field name="Value">81.0878048780488</field>
+    </record>
+    <!-- Hongrie -->
+    <record>
+      <field name="Country or Area" key="HUN">Hongrie</field>
+      <field name="Item" key="SP.DYN.LE00.IN">Espérance de vie à la naissance, total (années)</field>
+      <field name="Year">2020</field>
+      <field name="Value">75.6170731707317</field>
+    </record>
+    <!-- Irlande -->
+    <record>
+      <field name="Country or Area" key="IRL">Irlande</field>
+      <field name="Item" key="SP.DYN.LE00.IN">Espérance de vie à la naissance, total (années)</field>
+      <field name="Year">2020</field>
+      <field name="Value">82.2048780487805</field>
+    </record>
+    <!-- Italie -->
+    <record>
+      <field name="Country or Area" key="ITA">Italie</field>
+      <field name="Item" key="SP.DYN.LE00.IN">Espérance de vie à la naissance, total (années)</field>
+      <field name="Year">2020</field>
+      <field name="Value">82.3439024390244</field>
+    </record>
+    <!-- Lettonie -->
+    <record>
+      <field name="Country or Area" key="LVA">Lettonie</field>
+      <field name="Item" key="SP.DYN.LE00.IN">Espérance de vie à la naissance, total (années)</field>
+      <field name="Year">2020</field>
+      <field name="Value">75.3878048780488</field>
+    </record>
+    <!-- Lituanie -->
+    <record>
+      <field name="Country or Area" key="LTU">Lituanie</field>
+      <field name="Item" key="SP.DYN.LE00.IN">Espérance de vie à la naissance, total (années)</field>
+      <field name="Year">2020</field>
+      <field name="Value">74.9292682926829</field>
+    </record>
+    <!-- Luxembourg -->
+    <record>
+      <field name="Country or Area" key="LUX">Luxembourg</field>
+      <field name="Item" key="SP.DYN.LE00.IN">Espérance de vie à la naissance, total (années)</field>
+      <field name="Year">2020</field>
+      <field name="Value">81.7414634146342</field>
+    </record>
+<!-- Malte -->
+    <record>
+      <field name="Country or Area" key="MLT">Malte</field>
+      <field name="Item" key="SP.DYN.LE00.IN">Espérance de vie à la naissance, total (années)</field>
+      <field name="Year">2020</field>
+      <field name="Value">82.6536585365854</field>
+    </record>
+<!-- Pays-Bas -->
+    <record>
+      <field name="Country or Area" key="NLD">Pays-Bas</field>
+      <field name="Item" key="SP.DYN.LE00.IN">Espérance de vie à la naissance, total (années)</field>
+      <field name="Year">2020</field>
+      <field name="Value">81.409756097561</field>
+    </record>
+<!-- Pologne -->
+    <record>
+      <field name="Country or Area" key="POL">Pologne</field>
+      <field name="Item" key="SP.DYN.LE00.IN">Espérance de vie à la naissance, total (années)</field>
+      <field name="Year">2020</field>
+      <field name="Value">76.6</field>
+    </record>
+<!-- Portugal -->
+    <record>
+      <field name="Country or Area" key="PRT">Portugal</field>
+      <field name="Item" key="SP.DYN.LE00.IN">Espérance de vie à la naissance, total (années)</field>
+      <field name="Year">2020</field>
+      <field name="Value">80.9756097560976</field>
+    </record>
+<!-- République slovaque -->
+    <record>
+      <field name="Country or Area" key="SVK">République slovaque</field>
+      <field name="Item" key="SP.DYN.LE00.IN">Espérance de vie à la naissance, total (années)</field>
+      <field name="Year">2020</field>
+      <field name="Value">76.8658536585366</field>
+    </record>
+<!-- République tchèque -->
+    <record>
+      <field name="Country or Area" key="CZE">République tchèque</field>
+      <field name="Item" key="SP.DYN.LE00.IN">Espérance de vie à la naissance, total (années)</field>
+      <field name="Year">2020</field>
+      <field name="Value">78.2268292682927</field>
+    </record>
+<!-- Roumanie -->
+        <record>
+      <field name="Country or Area" key="ROU">Roumanie</field>
+      <field name="Item" key="SP.DYN.LE00.IN">Espérance de vie à la naissance, total (années)</field>
+      <field name="Year">2020</field>
+      <field name="Value">74.3536585365854</field>
+    </record>
+<!-- Slovénie -->
+        <record>
+      <field name="Country or Area" key="SVN">Slovénie</field>
+      <field name="Item" key="SP.DYN.LE00.IN">Espérance de vie à la naissance, total (années)</field>
+      <field name="Year">2020</field>
+      <field name="Value">80.5317073170732</field>
+    </record>
+<!-- Suède -->
+    <record>
+      <field name="Country or Area" key="SWE">Suède</field>
+      <field name="Item" key="SP.DYN.LE00.IN">Espérance de vie à la naissance, total (années)</field>
+      <field name="Year">2020</field>
+      <field name="Value">82.4073170731707</field>
+    </record>
+</data>
+</Root>

@@ -1,0 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,
+#__next {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  height: 100%;
+}
