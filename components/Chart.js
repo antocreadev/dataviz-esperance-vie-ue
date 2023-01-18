@@ -247,18 +247,9 @@ export default function ChartGlobalLifeSpanInEU() {
   useEffect(() => {
     if (data && dataPib && dataHci && dataSanitationServices) {
       const DATA = data.Root.data.record;
-      // CONSOLE LOG
-
-      // console.log("ALL DATA", DATA);
-      // console.log("NAME", allValuesByCountries);
-      // console.log("value 2020", allValuesByValue2020);
-      // console.log("value 2020 sorted", allValuesByValue2020Sorted);
       console.log("fomat data", formatData);
-      // console.log(nameCountrieSortedByValue2020);
       console.log("data pib", dataPibByCountry);
-
       console.log("data HCI", dataHpiByCountry);
-      // console.log("default", dataPib.Root.data.record);
       // SET OPTION
       const OPTION_BAR_LIFE_SPAN = {
         visualMap: {
@@ -630,7 +621,7 @@ export default function ChartGlobalLifeSpanInEU() {
         }
       });
     }
-  }, [data]);
+  }, [data, dataHci, dataPib, dataSanitationServices]);
   // --- TEST IF DATA EXIST ---
   if (
     isLoadingData === true &&
