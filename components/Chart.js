@@ -58,6 +58,7 @@ export default function ChartGlobalLifeSpanInEU() {
     fetch("https://sae303-dataviz.herokuapp.com/api/sanitationServices")
       .then((res) => res.json())
       .then((data) => {
+        console.log(data);
         setDataSanitationServices(data);
         setLoadingDataSanitationServices(false);
       });
@@ -603,6 +604,7 @@ export default function ChartGlobalLifeSpanInEU() {
         ],
       };
       setOptions(OPTION_MAP);
+      console.log(options);
       // SET OPTION WHEN SCROLL
       window.addEventListener("scroll", () => {
         if (window.scrollY >= 1000) {
@@ -630,7 +632,14 @@ export default function ChartGlobalLifeSpanInEU() {
     }
   }, [data]);
   // --- TEST IF DATA EXIST ---
-  if (isLoadingData === true) return <p>Loading...</p>; // loading
-  if (!data || !options) return <p>No data exist</p>; // no data
+  if (
+    isLoadingData === true &&
+    isLoadingDataHci == true &&
+    isLoadingDataPib === true &&
+    isLoadingDataSanitationServices == true
+  )
+    return <p>Loading...</p>; // loading
+  if (!data || !dataHci || !dataPib || !dataSanitationServices || !options)
+    return <p>No data exist</p>; // no data
   return <ReactEchart id="chart" option={options} />;
 }
