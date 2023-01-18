@@ -25,6 +25,7 @@ export default function ChartGlobalLifeSpanInEU() {
     fetch("https://sae303-dataviz.herokuapp.com/api/lifespan")
       .then((res) => res.json())
       .then((data) => {
+        console.log(data);
         setData(data);
         setLoadingData(false);
       });
@@ -35,6 +36,7 @@ export default function ChartGlobalLifeSpanInEU() {
     fetch("https://sae303-dataviz.herokuapp.com/api/pib")
       .then((res) => res.json())
       .then((data) => {
+        console.log(data);
         setDataPib(data);
         setLoadingDataPib(false);
       });
@@ -45,6 +47,7 @@ export default function ChartGlobalLifeSpanInEU() {
     fetch("https://sae303-dataviz.herokuapp.com/api/hci")
       .then((res) => res.json())
       .then((data) => {
+        console.log(data);
         setDataHci(data);
         setLoadingDataHci(false);
       });
