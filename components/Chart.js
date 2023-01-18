@@ -22,7 +22,7 @@ export default function ChartGlobalLifeSpanInEU() {
   useEffect(() => {
     setLoadingData(true);
     // fetch(" /api/hello")
-    fetch("http://localhost:3000/api/lifespan")
+    fetch("https://sae303-dataviz.herokuapp.com/api/lifespan")
       .then((res) => res.json())
       .then((data) => {
         setData(data);
@@ -32,7 +32,7 @@ export default function ChartGlobalLifeSpanInEU() {
   // --- FETCH DATA  ---
   useEffect(() => {
     setLoadingDataPib(true);
-    fetch("http://localhost:3000/api/pib")
+    fetch("https://sae303-dataviz.herokuapp.com/api/pib")
       .then((res) => res.json())
       .then((data) => {
         setDataPib(data);
@@ -42,7 +42,7 @@ export default function ChartGlobalLifeSpanInEU() {
   // --- FETCH DATA  ---
   useEffect(() => {
     setLoadingDataHci(true);
-    fetch("http://localhost:3000/api/hci")
+    fetch("https://sae303-dataviz.herokuapp.com/api/hci")
       .then((res) => res.json())
       .then((data) => {
         setDataHci(data);
@@ -52,7 +52,7 @@ export default function ChartGlobalLifeSpanInEU() {
   // --- FETCH DATA  ---
   useEffect(() => {
     setLoadingDataSanitationServices(true);
-    fetch("http://localhost:3000/api/sanitationServices")
+    fetch("https://sae303-dataviz.herokuapp.com/api/sanitationServices")
       .then((res) => res.json())
       .then((data) => {
         setDataSanitationServices(data);

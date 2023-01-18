@@ -9,7 +9,7 @@ export default function ChartGlobalLifeSpanInEU() {
   // --- FETCH DATA  ---
   useEffect(() => {
     setLoadingData(true);
-    fetch("http://localhost:3000/api/hello")
+    fetch("https://sae303-dataviz.herokuapp.com/api/hello")
       .then((res) => res.json())
       .then((data) => {
         setData(data);
