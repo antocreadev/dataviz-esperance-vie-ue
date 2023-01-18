@@ -11,6 +11,13 @@ export default function ChartGlobalLifeSpanInEU() {
 
   const [dataPib, setDataPib] = useState(null); // state for API
   const [isLoadingDataPib, setLoadingDataPib] = useState(false); // state for loading data
+
+  const [dataHci, setDataHci] = useState(null); // state for API
+  const [isLoadingDataHci, setLoadingDataHci] = useState(false); // state for loading data
+
+  const [dataSanitationServices, setDataSanitationServices] = useState(null); // state for API
+  const [isLoadingDataSanitationServices, setLoadingDataSanitationServices] =
+    useState(false); // state for loading data
   // --- FETCH DATA  ---
   useEffect(() => {
     setLoadingData(true);
@@ -30,6 +37,26 @@ export default function ChartGlobalLifeSpanInEU() {
       .then((data) => {
         setDataPib(data);
         setLoadingDataPib(false);
+      });
+  }, []);
+  // --- FETCH DATA  ---
+  useEffect(() => {
+    setLoadingDataHci(true);
+    fetch("http://localhost:3000/api/hci")
+      .then((res) => res.json())
+      .then((data) => {
+        setDataHci(data);
+        setLoadingDataHci(false);
+      });
+  }, []);
+  // --- FETCH DATA  ---
+  useEffect(() => {
+    setLoadingDataSanitationServices(true);
+    fetch("http://localhost:3000/api/sanitationServices")
+      .then((res) => res.json())
+      .then((data) => {
+        setDataSanitationServices(data);
+        setLoadingDataSanitationServices(false);
       });
   }, []);
   // ----- FUNCTION -----
@@ -108,7 +135,6 @@ export default function ChartGlobalLifeSpanInEU() {
       return tab.sort((a, b) => a.value - b.value);
     }
   }, [data]);
-
   const nameCountrieSortedByValue2020 = useMemo(() => {
     if (data) {
       const DATA = data.Root.data.record;
@@ -158,7 +184,6 @@ export default function ChartGlobalLifeSpanInEU() {
     "Suède",
     "Chypre",
   ];
-
   const dataPibByCountry = useMemo(() => {
     if (dataPib && data) {
       const DATA_PIB = dataPib.Root.data.record;
@@ -178,9 +203,45 @@ export default function ChartGlobalLifeSpanInEU() {
     }
   }, [dataPib]);
 
+  const dataHpiByCountry = useMemo(() => {
+    if (dataPib && data && dataHci) {
+      const DATA_HCI = dataHci.Root.data.record;
+      const tab = [];
+      DATA_HCI.map((item) => {
+        Contries_tab.map((country) => {
+          item.field[0]._text === country && item.field[2]._text === "2020"
+            ? tab.push({
+                value: item.field[3]._text,
+                name: item.field[0]._text,
+              })
+            : null;
+        });
+      });
+      return tab;
+    }
+  }, [dataHci]);
+
+  const dataSanitationServicesByCountry = useMemo(() => {
+    if (dataPib && data && dataHci && dataSanitationServices) {
+      const DATA_SANITATION_SERVICES = dataSanitationServices.Root.data.record;
+      const tab = [];
+      DATA_SANITATION_SERVICES.map((item) => {
+        Contries_tab.map((country) => {
+          item.field[0]._text === country && item.field[2]._text === "2020"
+            ? tab.push({
+                value: item.field[3]._text,
+                name: item.field[0]._text,
+              })
+            : null;
+        });
+      });
+      return tab;
+    }
+  }, [dataSanitationServices]);
+
   // --- SETOPTION ---
   useEffect(() => {
-    if (data && dataPib) {
+    if (data && dataPib && dataHci && dataSanitationServices) {
       const DATA = data.Root.data.record;
       // CONSOLE LOG
 
@@ -191,6 +252,8 @@ export default function ChartGlobalLifeSpanInEU() {
       console.log("fomat data", formatData);
       // console.log(nameCountrieSortedByValue2020);
       console.log("data pib", dataPibByCountry);
+
+      console.log("data HCI", dataHpiByCountry);
       // console.log("default", dataPib.Root.data.record);
       // SET OPTION
       const OPTION_BAR_LIFE_SPAN = {
@@ -288,8 +351,8 @@ export default function ChartGlobalLifeSpanInEU() {
                 color: "#F05638",
               },
             },
-            // min: 73, // if delete animationDurationUpdate: 1500, universalTransition: true, in series
-            // max: 83,
+            min: 10000, // if delete animationDurationUpdate: 1500, universalTransition: true, in series
+            max: 120000,
           },
         ],
         xAxis: [
@@ -315,6 +378,75 @@ export default function ChartGlobalLifeSpanInEU() {
             animationDurationUpdate: 1500,
             universalTransition: true,
             data: dataPibByCountry,
+            type: "line",
+            lineStyle: {
+              color: "#F05638",
+            },
+          },
+        ],
+      };
+      const OPTION_BAR_LIFE_SPAN_SANITATION_SERVICES = {
+        visualMap: {
+          show: false,
+        },
+        tooltip: {
+          trigger: "item",
+          showDelay: 0,
+          transitionDuration: 0.2,
+        },
+        title: {
+          show: false,
+          text: "Life span in Europe",
+          subtext: "donnees.banquemondiale.org",
+          sublink:
+            "https://donnees.banquemondiale.org/indicateur/SP.DYN.LE00.IN?locations=EU",
+          left: "right",
+        },
+        yAxis: [
+          {
+            show: true,
+            type: "value",
+            name: "Âge en année",
+            min: 73, // if delete animationDurationUpdate: 1500, universalTransition: true, in series
+            max: 83,
+          },
+          {
+            show: true,
+            type: "value",
+            name: "Sanitaion Services",
+            axisLine: {
+              show: true,
+              lineStyle: {
+                color: "#402008",
+              },
+            },
+            min: 60, // if delete animationDurationUpdate: 1500, universalTransition: true, in series
+            max: 100,
+          },
+        ],
+        xAxis: [
+          {
+            show: true,
+            type: "category",
+            data: nameCountrieSortedByValue2020,
+            boundaryGap: false,
+            name: "Année",
+          },
+        ],
+
+        series: [
+          {
+            animationDurationUpdate: 1500,
+            universalTransition: true,
+            data: formatData,
+            type: "bar",
+          },
+          {
+            show: true,
+            yAxisIndex: 1,
+            animationDurationUpdate: 1500,
+            universalTransition: true,
+            data: dataSanitationServicesByCountry,
             type: "line",
             lineStyle: {
               color: "#F05638",
@@ -393,6 +525,80 @@ export default function ChartGlobalLifeSpanInEU() {
           },
         ],
       };
+
+      ///------ test
+      const OPTION_BAR_LIFE_SPAN_AND_HCI = {
+        visualMap: {
+          show: false,
+        },
+        tooltip: {
+          trigger: "item",
+          showDelay: 0,
+          transitionDuration: 0.2,
+        },
+        title: {
+          show: false,
+          text: "Life span in Europe",
+          subtext: "donnees.banquemondiale.org",
+          sublink:
+            "https://donnees.banquemondiale.org/indicateur/SP.DYN.LE00.IN?locations=EU",
+          left: "right",
+        },
+        yAxis: [
+          {
+            show: true,
+            type: "value",
+            name: "Âge en année",
+            min: 73, // if delete animationDurationUpdate: 1500, universalTransition: true, in series
+            max: 83,
+          },
+          {
+            show: true,
+            type: "value",
+            name: "HCI",
+            min: 0.55, // if delete animationDurationUpdate: 1500, universalTransition: true, in series
+            max: 0.8,
+            axisLine: {
+              show: true,
+              lineStyle: {
+                color: "#995498",
+              },
+            },
+            // min: 73, // if delete animationDurationUpdate: 1500, universalTransition: true, in series
+            // max: 83,
+          },
+        ],
+        xAxis: [
+          {
+            show: true,
+            type: "category",
+            data: nameCountrieSortedByValue2020,
+            boundaryGap: false,
+            name: "Année",
+          },
+        ],
+
+        series: [
+          {
+            animationDurationUpdate: 1500,
+            universalTransition: true,
+            data: formatData,
+            type: "bar",
+          },
+          {
+            show: true,
+            yAxisIndex: 1,
+            animationDurationUpdate: 1500,
+            universalTransition: true,
+            data: dataHpiByCountry,
+            type: "line",
+            smooth: true,
+            lineStyle: {
+              color: "#995498",
+            },
+          },
+        ],
+      };
       setOptions(OPTION_MAP);
       // SET OPTION WHEN SCROLL
       window.addEventListener("scroll", () => {
@@ -401,6 +607,16 @@ export default function ChartGlobalLifeSpanInEU() {
           setOptions(OPTION_BAR_LIFE_SPAN);
           if (window.scrollY >= 1500) {
             setOptions(OPTION_BAR_LIFE_SPAN_AND_PIB);
+            if (window.scrollY >= 2000) {
+              setOptions(OPTION_BAR_LIFE_SPAN_AND_HCI);
+              if (window.scrollY >= 2500) {
+                setOptions(OPTION_BAR_LIFE_SPAN_SANITATION_SERVICES);
+              } else {
+                setOptions(OPTION_BAR_LIFE_SPAN_AND_HCI);
+              }
+            } else {
+              setOptions(OPTION_BAR_LIFE_SPAN_AND_PIB);
+            }
           } else {
             setOptions(OPTION_BAR_LIFE_SPAN);
           }

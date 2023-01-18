@@ -1,0 +1,167 @@
+<?xml version='1.0' encoding='utf-8'?>
+<Root>
+<data>
+<record>
+      <field name="Country or Area" key="BGR">Bulgarie</field>
+      <field name="Item" key="SH.STA.SMSS.ZS">People using safely managed sanitation services (% of population)</field>
+      <field name="Year">2020</field>
+      <field name="Value">72.22877412</field>
+    </record>
+    <record>
+      <field name="Country or Area" key="ROU">Roumanie</field>
+      <field name="Item" key="SH.STA.SMSS.ZS">People using safely managed sanitation services (% of population)</field>
+      <field name="Year">2020</field>
+      <field name="Value">83.14104863</field>
+    </record>
+    <record>
+      <field name="Country or Area" key="LTU">Lituanie</field>
+      <field name="Item" key="SH.STA.SMSS.ZS">People using safely managed sanitation services (% of population)</field>
+      <field name="Year">2020</field>
+      <field name="Value">93.93707198</field>
+    </record>
+    <record>
+      <field name="Country or Area" key="LVA">Lettonie</field>
+      <field name="Item" key="SH.STA.SMSS.ZS">People using safely managed sanitation services (% of population)</field>
+      <field name="Year">2020</field>
+      <field name="Value">83.40960117</field>
+    </record>
+    <record>
+      <field name="Country or Area" key="HUN">Hongrie</field>
+      <field name="Item" key="SH.STA.SMSS.ZS">People using safely managed sanitation services (% of population)</field>
+      <field name="Year">2020</field>
+      <field name="Value">87.7804865</field>
+    </record>
+    <record>
+      <field name="Country or Area" key="POL">Pologne</field>
+      <field name="Item" key="SH.STA.SMSS.ZS">People using safely managed sanitation services (% of population)</field>
+      <field name="Year">2020</field>
+      <field name="Value">90.54196321</field>
+    </record>
+    <record>
+      <field name="Country or Area" key="SVK">République slovaque</field>
+      <field name="Item" key="SH.STA.SMSS.ZS">People using safely managed sanitation services (% of population)</field>
+      <field name="Year">2020</field>
+      <field name="Value">81.93498231</field>
+    </record>
+    <record>
+      <field name="Country or Area" key="HRV">Croatie</field>
+      <field name="Item" key="SH.STA.SMSS.ZS">People using safely managed sanitation services (% of population)</field>
+      <field name="Year">2020</field>
+      <field name="Value">67.78555485</field>
+    </record>
+    <record>
+      <field name="Country or Area" key="CZE">République tchèque</field>
+      <field name="Item" key="SH.STA.SMSS.ZS">People using safely managed sanitation services (% of population)</field>
+      <field name="Year">2020</field>
+      <field name="Value">85.2044177</field>
+    </record>
+    <record>
+      <field name="Country or Area" key="EST">Estonie</field>
+      <field name="Item" key="SH.STA.SMSS.ZS">People using safely managed sanitation services (% of population)</field>
+      <field name="Year">2020</field>
+      <field name="Value">93.06072861</field>
+    </record>
+    <record>
+      <field name="Country or Area" key="SVN">Slovénie</field>
+      <field name="Item" key="SH.STA.SMSS.ZS">People using safely managed sanitation services (% of population)</field>
+      <field name="Year">2020</field>
+      <field name="Value">71.54819663</field>
+    </record>
+    <record>
+      <field name="Country or Area" key="BEL">Belgique</field>
+      <field name="Item" key="SH.STA.SMSS.ZS">People using safely managed sanitation services (% of population)</field>
+      <field name="Year">2020</field>
+      <field name="Value">88.82071008</field>
+    </record>
+    <record>
+      <field name="Country or Area" key="CYP">Chypre</field>
+      <field name="Item" key="SH.STA.SMSS.ZS">People using safely managed sanitation services (% of population)</field>
+      <field name="Year">2020</field>
+      <field name="Value">77.08440429</field>
+    </record>
+    <record>
+      <field name="Country or Area" key="DEU">Allemagne</field>
+      <field name="Item" key="SH.STA.SMSS.ZS">People using safely managed sanitation services (% of population)</field>
+      <field name="Year">2020</field>
+      <field name="Value">97.12541087</field>
+    </record>
+    <record>
+      <field name="Country or Area" key="PRT">Portugal</field>
+      <field name="Item" key="SH.STA.SMSS.ZS">People using safely managed sanitation services (% of population)</field>
+      <field name="Year">2020</field>
+      <field name="Value">85.0813595</field>
+    </record>
+    <record>
+      <field name="Country or Area" key="GRC">Grèce</field>
+      <field name="Item" key="SH.STA.SMSS.ZS">People using safely managed sanitation services (% of population)</field>
+      <field name="Year">2020</field>
+      <field name="Value">91.71870529</field>
+    </record>
+    <record>
+      <field name="Country or Area" key="AUT">Autriche</field>
+      <field name="Item" key="SH.STA.SMSS.ZS">People using safely managed sanitation services (% of population)</field>
+      <field name="Year">2020</field>
+      <field name="Value">99.64252491</field>
+    </record>
+    <record>
+      <field name="Country or Area" key="NLD">Pays-Bas</field>
+      <field name="Item" key="SH.STA.SMSS.ZS">People using safely managed sanitation services (% of population)</field>
+      <field name="Year">2020</field>
+      <field name="Value">97.49706115</field>
+    </record>
+    <record>
+      <field name="Country or Area" key="DNK">Danemark</field>
+      <field name="Item" key="SH.STA.SMSS.ZS">People using safely managed sanitation services (% of population)</field>
+      <field name="Year">2020</field>
+      <field name="Value">91.88920329</field>
+    </record>
+    <record>
+      <field name="Country or Area" key="LUX">Luxembourg</field>
+      <field name="Item" key="SH.STA.SMSS.ZS">People using safely managed sanitation services (% of population)</field>
+      <field name="Year">2020</field>
+      <field name="Value">96.78404532</field>
+    </record>
+    <record>
+      <field name="Country or Area" key="FIN">Finlande</field>
+      <field name="Item" key="SH.STA.SMSS.ZS">People using safely managed sanitation services (% of population)</field>
+      <field name="Year">2020</field>
+      <field name="Value">84.09986144</field>
+    </record>
+    <record>
+      <field name="Country or Area" key="FRA">France</field>
+      <field name="Item" key="SH.STA.SMSS.ZS">People using safely managed sanitation services (% of population)</field>
+      <field name="Year">2020</field>
+      <field name="Value">78.5884767</field>
+    </record>
+    <record>
+      <field name="Country or Area" key="IRL">Irlande</field>
+      <field name="Item" key="SH.STA.SMSS.ZS">People using safely managed sanitation services (% of population)</field>
+      <field name="Year">2020</field>
+      <field name="Value">82.89898929</field>
+    </record>
+    <record>
+      <field name="Country or Area" key="ESP">Espagne</field>
+      <field name="Item" key="SH.STA.SMSS.ZS">People using safely managed sanitation services (% of population)</field>
+      <field name="Year">2020</field>
+      <field name="Value">95.66521712</field>
+    </record>
+    <record>
+      <field name="Country or Area" key="ITA">Italie</field>
+      <field name="Item" key="SH.STA.SMSS.ZS">People using safely managed sanitation services (% of population)</field>
+      <field name="Year">2020</field>
+      <field name="Value">95.78339507</field>
+    </record>
+    <record>
+      <field name="Country or Area" key="SWE">Suède</field>
+      <field name="Item" key="SH.STA.SMSS.ZS">People using safely managed sanitation services (% of population)</field>
+      <field name="Year">2020</field>
+      <field name="Value">94.93116239</field>
+    </record>
+    <record>
+      <field name="Country or Area" key="MLT">Malte</field>
+      <field name="Item" key="SH.STA.SMSS.ZS">People using safely managed sanitation services (% of population)</field>
+      <field name="Year">2020</field>
+      <field name="Value">91.86797469</field>
+    </record>
+    </data>
+    </Root>

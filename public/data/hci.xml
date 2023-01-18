@@ -1,0 +1,168 @@
+<?xml version='1.0' encoding='utf-8'?>
+<Root>
+<data>
+<record>
+
+      <field name="Country or Area" key="BGR">Bulgarie</field>
+      <field name="Item" key="HD.HCI.OVRL">Human Capital Index (HCI) (scale 0-1)</field>
+      <field name="Year">2020</field>
+      <field name="Value">0.613898158073425</field>
+    </record>
+    <record>
+      <field name="Country or Area" key="ROU">Roumanie</field>
+      <field name="Item" key="HD.HCI.OVRL">Human Capital Index (HCI) (scale 0-1)</field>
+      <field name="Year">2020</field>
+      <field name="Value">0.584187865257263</field>
+    </record>
+    <record>
+      <field name="Country or Area" key="LTU">Lituanie</field>
+      <field name="Item" key="HD.HCI.OVRL">Human Capital Index (HCI) (scale 0-1)</field>
+      <field name="Year">2020</field>
+      <field name="Value">0.70604795217514</field>
+    </record>
+    <record>
+      <field name="Country or Area" key="LVA">Lettonie</field>
+      <field name="Item" key="HD.HCI.OVRL">Human Capital Index (HCI) (scale 0-1)</field>
+      <field name="Year">2020</field>
+      <field name="Value">0.70658141374588</field>
+    </record>
+    <record>
+      <field name="Country or Area" key="HUN">Hongrie</field>
+      <field name="Item" key="HD.HCI.OVRL">Human Capital Index (HCI) (scale 0-1)</field>
+      <field name="Year">2020</field>
+      <field name="Value">0.683087289333344</field>
+    </record>
+    <record>
+      <field name="Country or Area" key="POL">Pologne</field>
+      <field name="Item" key="HD.HCI.OVRL">Human Capital Index (HCI) (scale 0-1)</field>
+      <field name="Year">2020</field>
+      <field name="Value">0.753088593482971</field>
+    </record>
+    <record>
+      <field name="Country or Area" key="SVK">République slovaque</field>
+      <field name="Item" key="HD.HCI.OVRL">Human Capital Index (HCI) (scale 0-1)</field>
+      <field name="Year">2020</field>
+      <field name="Value">0.664987325668335</field>
+    </record>
+    <record>
+      <field name="Country or Area" key="HRV">Croatie</field>
+      <field name="Item" key="HD.HCI.OVRL">Human Capital Index (HCI) (scale 0-1)</field>
+      <field name="Year">2020</field>
+      <field name="Value">0.709693968296051</field>
+    </record>
+    <record>
+      <field name="Country or Area" key="CZE">République tchèque</field>
+      <field name="Item" key="HD.HCI.OVRL">Human Capital Index (HCI) (scale 0-1)</field>
+      <field name="Year">2020</field>
+      <field name="Value">0.752257406711578</field>
+    </record>
+    <record>
+      <field name="Country or Area" key="EST">Estonie</field>
+      <field name="Item" key="HD.HCI.OVRL">Human Capital Index (HCI) (scale 0-1)</field>
+      <field name="Year">2020</field>
+      <field name="Value">0.77720320224762</field>
+    </record>
+    <record>
+      <field name="Country or Area" key="SVN">Slovénie</field>
+      <field name="Item" key="HD.HCI.OVRL">Human Capital Index (HCI) (scale 0-1)</field>
+      <field name="Year">2020</field>
+      <field name="Value">0.774986982345581</field>
+    </record>
+    <record>
+      <field name="Country or Area" key="BEL">Belgique</field>
+      <field name="Item" key="HD.HCI.OVRL">Human Capital Index (HCI) (scale 0-1)</field>
+      <field name="Year">2020</field>
+      <field name="Value">0.76041966676712</field>
+    </record>
+    <record>
+      <field name="Country or Area" key="CYP">Chypre</field>
+      <field name="Item" key="HD.HCI.OVRL">Human Capital Index (HCI) (scale 0-1)</field>
+      <field name="Year">2020</field>
+      <field name="Value">0.755520224571228</field>
+    </record>
+    <record>
+      <field name="Country or Area" key="DEU">Allemagne</field>
+      <field name="Item" key="HD.HCI.OVRL">Human Capital Index (HCI) (scale 0-1)</field>
+      <field name="Year">2020</field>
+      <field name="Value">0.751162469387054</field>
+    </record>
+    <record>
+      <field name="Country or Area" key="PRT">Portugal</field>
+      <field name="Item" key="HD.HCI.OVRL">Human Capital Index (HCI) (scale 0-1)</field>
+      <field name="Year">2020</field>
+      <field name="Value">0.768949568271637</field>
+    </record>
+    <record>
+      <field name="Country or Area" key="GRC">Grèce</field>
+      <field name="Item" key="HD.HCI.OVRL">Human Capital Index (HCI) (scale 0-1)</field>
+      <field name="Year">2020</field>
+      <field name="Value">0.690006494522095</field>
+    </record>
+    <record>
+      <field name="Country or Area" key="AUT">Autriche</field>
+      <field name="Item" key="HD.HCI.OVRL">Human Capital Index (HCI) (scale 0-1)</field>
+      <field name="Year">2020</field>
+      <field name="Value">0.746739745140076</field>
+    </record>
+    <record>
+      <field name="Country or Area" key="NLD">Pays-Bas</field>
+      <field name="Item" key="HD.HCI.OVRL">Human Capital Index (HCI) (scale 0-1)</field>
+      <field name="Year">2020</field>
+      <field name="Value">0.789915025234222</field>
+    </record>
+    <record>
+      <field name="Country or Area" key="DNK">Danemark</field>
+      <field name="Item" key="HD.HCI.OVRL">Human Capital Index (HCI) (scale 0-1)</field>
+      <field name="Year">2020</field>
+      <field name="Value">0.755094826221466</field>
+    </record>
+    <record>
+      <field name="Country or Area" key="LUX">Luxembourg</field>
+      <field name="Item" key="HD.HCI.OVRL">Human Capital Index (HCI) (scale 0-1)</field>
+      <field name="Year">2020</field>
+      <field name="Value">0.686146140098572</field>
+    </record>
+    <record>
+      <field name="Country or Area" key="FIN">Finlande</field>
+      <field name="Item" key="HD.HCI.OVRL">Human Capital Index (HCI) (scale 0-1)</field>
+      <field name="Year">2020</field>
+      <field name="Value">0.796001017093658</field>
+    </record>
+    <record>
+      <field name="Country or Area" key="FRA">France</field>
+      <field name="Item" key="HD.HCI.OVRL">Human Capital Index (HCI) (scale 0-1)</field>
+      <field name="Year">2020</field>
+      <field name="Value">0.762737214565277</field>
+    </record>
+    <record>
+      <field name="Country or Area" key="IRL">Irlande</field>
+      <field name="Item" key="HD.HCI.OVRL">Human Capital Index (HCI) (scale 0-1)</field>
+      <field name="Year">2020</field>
+      <field name="Value">0.792599022388458</field>
+    </record>
+    <record>
+      <field name="Country or Area" key="ESP">Espagne</field>
+      <field name="Item" key="HD.HCI.OVRL">Human Capital Index (HCI) (scale 0-1)</field>
+      <field name="Year">2020</field>
+      <field name="Value">0.728255033493042</field>
+    </record>
+    <record>
+      <field name="Country or Area" key="ITA">Italie</field>
+      <field name="Item" key="HD.HCI.OVRL">Human Capital Index (HCI) (scale 0-1)</field>
+      <field name="Year">2020</field>
+      <field name="Value">0.727819681167603</field>
+    </record>
+    <record>
+      <field name="Country or Area" key="SWE">Suède</field>
+      <field name="Item" key="HD.HCI.OVRL">Human Capital Index (HCI) (scale 0-1)</field>
+      <field name="Year">2020</field>
+      <field name="Value">0.79535710811615</field>
+    </record>
+    <record>
+      <field name="Country or Area" key="MLT">Malte</field>
+      <field name="Item" key="HD.HCI.OVRL">Human Capital Index (HCI) (scale 0-1)</field>
+      <field name="Year">2020</field>
+      <field name="Value">0.709248304367065</field>
+    </record>
+      </data>
+    </Root>
