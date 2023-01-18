@@ -8,14 +8,28 @@ export default function ChartGlobalLifeSpanInEU() {
   const [isLoadingData, setLoadingData] = useState(false); // state for loading data
   const [data, setData] = useState(null); // state for API
   const [options, setOptions] = useState();
+
+  const [dataPib, setDataPib] = useState(null); // state for API
+  const [isLoadingDataPib, setLoadingDataPib] = useState(false); // state for loading data
   // --- FETCH DATA  ---
   useEffect(() => {
     setLoadingData(true);
-    fetch("https://sae303-dataviz.herokuapp.com/api/hello")
+    // fetch(" /api/hello")
+    fetch("http://localhost:3000/api/lifespan")
       .then((res) => res.json())
       .then((data) => {
         setData(data);
         setLoadingData(false);
+      });
+  }, []);
+  // --- FETCH DATA  ---
+  useEffect(() => {
+    setLoadingDataPib(true);
+    fetch("http://localhost:3000/api/pib")
+      .then((res) => res.json())
+      .then((data) => {
+        setDataPib(data);
+        setLoadingDataPib(false);
       });
   }, []);
   // ----- FUNCTION -----
@@ -115,20 +129,69 @@ export default function ChartGlobalLifeSpanInEU() {
       return tabName;
     }
   }, [data]);
+  const Contries_tab = [
+    "Allemagne",
+    "Autriche",
+    "Belgique",
+    "Bulgarie",
+    "Croatie",
+    "Danemark",
+    "Espagne",
+    "Estonie",
+    "Finlande",
+    "France",
+    "Grèce",
+    "Hongrie",
+    "Irlande",
+    "Italie",
+    "Lettonie",
+    "Lituanie",
+    "Luxembourg",
+    "Malte",
+    "Pays-Bas",
+    "Pologne",
+    "Portugal",
+    "République slovaque",
+    "République tchèque",
+    "Roumanie",
+    "Slovénie",
+    "Suède",
+    "Chypre",
+  ];
+
+  const dataPibByCountry = useMemo(() => {
+    if (dataPib && data) {
+      const DATA_PIB = dataPib.Root.data.record;
+      const DATA = data.Root.data.record;
+      const tab = [];
+      DATA_PIB.map((item) => {
+        Contries_tab.map((country) => {
+          item.field[0]._text === country && item.field[2]._text === "2020"
+            ? tab.push({
+                value: item.field[3]._text,
+                name: item.field[0]._text,
+              })
+            : null;
+        });
+      });
+      return tab;
+    }
+  }, [dataPib]);
 
   // --- SETOPTION ---
   useEffect(() => {
-    if (data) {
+    if (data && dataPib) {
       const DATA = data.Root.data.record;
       // CONSOLE LOG
 
-      console.log("ALL DATA", DATA);
-      console.log("NAME", allValuesByCountries);
-      console.log("value 2020", allValuesByValue2020);
-      console.log("value 2020 sorted", allValuesByValue2020Sorted);
+      // console.log("ALL DATA", DATA);
+      // console.log("NAME", allValuesByCountries);
+      // console.log("value 2020", allValuesByValue2020);
+      // console.log("value 2020 sorted", allValuesByValue2020Sorted);
       console.log("fomat data", formatData);
-      console.log(nameCountrieSortedByValue2020);
-
+      // console.log(nameCountrieSortedByValue2020);
+      console.log("data pib", dataPibByCountry);
+      // console.log("default", dataPib.Root.data.record);
       // SET OPTION
       const OPTION_BAR_LIFE_SPAN = {
         visualMap: {
@@ -140,6 +203,7 @@ export default function ChartGlobalLifeSpanInEU() {
           transitionDuration: 0.2,
         },
         title: {
+          show: true,
           text: "Life span in Europe",
           subtext: "donnees.banquemondiale.org",
           sublink:
@@ -153,6 +217,13 @@ export default function ChartGlobalLifeSpanInEU() {
             name: "Âge en année",
             min: 73, // if delete animationDurationUpdate: 1500, universalTransition: true, in series
             max: 83,
+          },
+          {
+            show: false,
+            type: "value",
+            name: "PIB",
+            // min: 73, // if delete animationDurationUpdate: 1500, universalTransition: true, in series
+            // max: 83,
           },
         ],
         xAxis: [
@@ -172,15 +243,97 @@ export default function ChartGlobalLifeSpanInEU() {
             data: formatData,
             type: "bar",
           },
+          {
+            show: false,
+            yAxisIndex: 1,
+            animationDurationUpdate: 1500,
+            data: [],
+            universalTransition: true,
+            type: "line",
+          },
+        ],
+      };
+      const OPTION_BAR_LIFE_SPAN_AND_PIB = {
+        visualMap: {
+          show: false,
+        },
+        tooltip: {
+          trigger: "item",
+          showDelay: 0,
+          transitionDuration: 0.2,
+        },
+        title: {
+          show: false,
+          text: "Life span in Europe",
+          subtext: "donnees.banquemondiale.org",
+          sublink:
+            "https://donnees.banquemondiale.org/indicateur/SP.DYN.LE00.IN?locations=EU",
+          left: "right",
+        },
+        yAxis: [
+          {
+            show: true,
+            type: "value",
+            name: "Âge en année",
+            min: 73, // if delete animationDurationUpdate: 1500, universalTransition: true, in series
+            max: 83,
+          },
+          {
+            show: true,
+            type: "value",
+            name: "PIB",
+            axisLine: {
+              show: true,
+              lineStyle: {
+                color: "#F05638",
+              },
+            },
+            // min: 73, // if delete animationDurationUpdate: 1500, universalTransition: true, in series
+            // max: 83,
+          },
+        ],
+        xAxis: [
+          {
+            show: true,
+            type: "category",
+            data: nameCountrieSortedByValue2020,
+            boundaryGap: false,
+            name: "Année",
+          },
+        ],
+
+        series: [
+          {
+            animationDurationUpdate: 1500,
+            universalTransition: true,
+            data: formatData,
+            type: "bar",
+          },
+          {
+            show: true,
+            yAxisIndex: 1,
+            animationDurationUpdate: 1500,
+            universalTransition: true,
+            data: dataPibByCountry,
+            type: "line",
+            lineStyle: {
+              color: "#F05638",
+            },
+          },
         ],
       };
       const OPTION_MAP = {
         xAxis: {
           show: false,
         },
-        yAxis: {
-          show: false,
-        },
+        yAxis: [
+          {
+            show: false,
+          },
+          {
+            show: false,
+          },
+        ],
         title: {
           text: "Life span in Europe",
           subtext: "donnees.banquemondiale.org",
@@ -195,6 +348,7 @@ export default function ChartGlobalLifeSpanInEU() {
         },
         visualMap: {
           show: true,
+
           left: "right",
           min: 73,
           max: 83,
@@ -231,14 +385,25 @@ export default function ChartGlobalLifeSpanInEU() {
             },
             data: formatData,
           },
+          {
+            show: false,
+            animationDurationUpdate: 1500,
+            universalTransition: true,
+            type: "bar",
+          },
         ],
       };
       setOptions(OPTION_MAP);
       // SET OPTION WHEN SCROLL
       window.addEventListener("scroll", () => {
-        if (window.scrollY >= 200) {
+        if (window.scrollY >= 1000) {
           // if screen is large
           setOptions(OPTION_BAR_LIFE_SPAN);
+          if (window.scrollY >= 1500) {
+            setOptions(OPTION_BAR_LIFE_SPAN_AND_PIB);
+          } else {
+            setOptions(OPTION_BAR_LIFE_SPAN);
+          }
         } else {
           setOptions(OPTION_MAP);
         }
