@@ -22,7 +22,7 @@ export default function ChartGlobalLifeSpanInEU() {
   useEffect(() => {
     setLoadingData(true);
     // fetch(" /api/hello")
-    fetch("http://localhost:3000/api/lifespan")
+    fetch("https://sae303-dataviz.herokuapp.com/api/lifespan")
       .then((res) => res.json())
       .then((data) => {
         console.log(data);
@@ -33,7 +33,7 @@ export default function ChartGlobalLifeSpanInEU() {
   // --- FETCH DATA  ---
   useEffect(() => {
     setLoadingDataPib(true);
-    fetch("http://localhost:3000/api/pib")
+    fetch("https://sae303-dataviz.herokuapp.com/api/pib")
       .then((res) => res.json())
       .then((data) => {
         console.log(data);
@@ -44,7 +44,7 @@ export default function ChartGlobalLifeSpanInEU() {
   // --- FETCH DATA  ---
   useEffect(() => {
     setLoadingDataHci(true);
-    fetch("http://localhost:3000/api/hci")
+    fetch("https://sae303-dataviz.herokuapp.com/api/hci")
       .then((res) => res.json())
       .then((data) => {
         console.log(data);
@@ -55,7 +55,7 @@ export default function ChartGlobalLifeSpanInEU() {
   // --- FETCH DATA  ---
   useEffect(() => {
     setLoadingDataSanitationServices(true);
-    fetch("http://localhost:3000/api/sanitationServices")
+    fetch("https://sae303-dataviz.herokuapp.com/api/sanitationServices")
       .then((res) => res.json())
       .then((data) => {
         console.log(data);
@@ -408,14 +408,14 @@ export default function ChartGlobalLifeSpanInEU() {
           {
             show: true,
             type: "value",
-            name: "Sanitaion Services",
+            name: "Assainissement",
             axisLine: {
               show: true,
               lineStyle: {
-                color: "#402008",
+                color: "#9f1239",
               },
             },
-            min: 60, // if delete animationDurationUpdate: 1500, universalTransition: true, in series
+            min: 65, // if delete animationDurationUpdate: 1500, universalTransition: true, in series
             max: 100,
           },
         ],
@@ -444,7 +444,7 @@ export default function ChartGlobalLifeSpanInEU() {
             data: dataSanitationServicesByCountry,
             type: "line",
             lineStyle: {
-              color: "#F05638",
+              color: "#9f1239",
             },
           },
         ],

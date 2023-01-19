@@ -84,7 +84,7 @@ export default function index() {
         >
           <Chart />
         </div>
-        <section className="w-100vw lg:w-30vw m-5 prose mb-52">
+        <section className="w-30vw m-5 prose mb-52">
           <h2 className="text-primary">Cartographie de l'union européenne</h2>
           <p>
             La carte nous montre les pays de l'Union Européenne sous différentes
@@ -106,7 +106,7 @@ export default function index() {
             en légende.
           </p>
         </section>
-        <section className="w-100vw lg:w-30vw m-5 prose  mb-52 ">
+        <section className="w-30vw m-5 prose  mb-52 ">
           <h2 className="text-primary">
             Quel est le pays avec la plus grande espérance de vie ?
           </h2>
@@ -114,17 +114,17 @@ export default function index() {
             D'après les données de la banque mondiale, en 2020, le pays avec la
             plus grande espérance de vie est{" "}
             <span className="text-primary">Malte</span> avec environ{" "}
-            <span className="text-primary">82 ans </span>, au contraire la
+            <span className="text-primary">82 ans</span>, au contraire la
             <span className="text-error"> Bulgarie</span> où l'espérance de vie
             est la plus faible avec environ{" "}
             <span className="text-error">72 ans</span>.
           </p>
           <p>
-            Nous pouvons constatés que les pays du nord de l'Europe, comme le
-            <span className="text-primary">Danemark</span> et{" "}
+            Nous pouvons constater que les pays du nord de l'Europe, comme le
+            <span className="text-primary"> Danemark</span> et{" "}
             <span className="text-primary">les pays scandinaves</span> ont
-            l'éspérance les plus élevées, avec des moyennes de{" "}
-            <span className="text-primary">80 ans</span> et plus. A l'inverse,
+            l'espérance la plus élevée, avec des moyennes de{" "}
+            <span className="text-primary">80 ans</span> et plus. À l'inverse,
             <span className="text-error">les pays de l'est</span> de l'Union
             Européenne, comme la <span className="text-error"> Bulgarie</span>{" "}
             et la <span className="text-error"> Roumanie</span>, ont des
@@ -136,7 +136,7 @@ export default function index() {
           </p>
           <h4>Comment expliquer cette différence ?</h4>
         </section>
-        <section className="w-100vw lg:w-30vw m-5 prose   mb-52">
+        <section className="w-30vw m-5 prose   mb-52">
           <h2 className="text-primary">Le PIB du pays</h2>
           <p>
             Le{" "}
@@ -158,11 +158,11 @@ export default function index() {
             l'autre est censée mesurer son taux de croissance économique.
           </p>
           <p>
-            Nous pouvons constatés que le{" "}
-            <span className="text-cyan-600">PIB</span> et l'éspérance de vie son
+            Nous pouvons constater que le{" "}
+            <span className="text-cyan-600">PIB</span> et l'espérance de vie son
             lié. En effet, les pays ayant les
-            <span className="text-cyan-600">PIB</span> les plus faible on
-            l'éspérance de vie les plsu basses comme la{" "}
+            <span className="text-cyan-600">PIB</span> les plus faibles ont
+            l'espérance de vie la plus basse comme la{" "}
             <span className="text-error">Lettonie</span> et la{" "}
             <span className="text-error">Hongrie</span>. Mais, les pays avec un
             PIB plus élevé comme la <span className="text-primary">France</span>{" "}
@@ -175,7 +175,7 @@ export default function index() {
             nationaux de l'OCDE.
           </p>
         </section>
-        <section className="w-100vw lg:w-30vw m-5 prose   mb-52">
+        <section className="w-30vw m-5 prose   mb-52">
           <h2 className="text-primary">
             IDH - L'indice de développement humain
           </h2>
@@ -211,26 +211,46 @@ export default function index() {
             .
           </p>
         </section>
-        <section className="w-100vw lg:w-30vw m-5 prose mb-52">
-          <h2 className="text-primary">SANITAION SERVIES</h2>
+        <section className="w-30vw m-5 prose mb-52">
+          <h2 className="text-primary">
+            Personnes utilisant des services d'assainissement gérés en toute
+            sécurité
+          </h2>
           <p>
-            La carte nous montre les pays de l'Union Européenne sous différentes
-            densités de couleur allant du
-            <span className="text-primary"> vert</span>, les pays avec une
-            espérance de vie élevés au
-            <span className="text-error"> rose </span> au moins élevé.
+            Personnes utilisant des services d'
+            <span className="text-rose-800">assainissement</span> gérés en toute
+            sécurité. Plus précisement le graphique montre le pourcentages de
+            personnes utilisant des installations sanitaires améliorées qui ne
+            sont pas partagées avec d'autres ménages et où les excréments sont
+            éliminés en toute sécurité sur place ou transportés et traités hors
+            site. Les installations d'
+            <span className="text-rose-800">assainissement</span> améliorées
+            comprennent les chasses d'eau/à chasse d'eau vers les réseaux
+            d'égouts, les fosses septiques ou les latrines à fosse : les
+            latrines à fosse ventilées améliorées, les toilettes mixtes ou les
+            latrines à fosse avec dalles.
           </p>
+
           <p>
-            Les données sur l'espérance de vie sont sur l'année 2020 et
-            proviennent de la banque mondiale.
+            Les pourcentages de personnes utilisant des installations sanitaires
+            améliorées sont globalement liés à l'espérance de vie. Hormis
+            quelques exceptions comme la{" "}
+            <span className="text-primary">France</span> et le{" "}
+            <span className="text-primary">Portugal</span> ayant une espérance
+            de vie élevéz mais un{" "}
+            <span className="text-rose-800">assainissement</span> moins bon. Ou
+            la <span className="text-error">Lituanie</span> qui a une espérance
+            de vie faible mais un bon{" "}
+            <span className="text-rose-800">assainissement</span>.
           </p>
+
           <p>
-            Vous pouvez interagir avec la carte en passant sur les pays ou en
-            jouant avec {/* color: ["#eb9494", "#496552"], */}
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-red-200 to-green-900 font-bold">
-              la barre de densité{" "}
-            </span>
-            en légende.
+            Donnée de la Banque mondiale datant de 2020, plus précisement
+            WHO/UNICEF Joint Monitoring Programme (JMP) for{" "}
+            <Link target="_blank" href="https://washdata.org/">
+              Water Supply, Sanitation and Hygiene
+            </Link>
+            .
           </p>
         </section>
         <section style={{ height: "25px" }}></section>
