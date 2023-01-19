@@ -22,7 +22,7 @@ export default function ChartGlobalLifeSpanInEU() {
   useEffect(() => {
     setLoadingData(true);
     // fetch(" /api/hello")
-    fetch("https://sae303-dataviz.herokuapp.com/api/lifespan")
+    fetch("http://localhost:3000/api/lifespan")
       .then((res) => res.json())
       .then((data) => {
         console.log(data);
@@ -33,7 +33,7 @@ export default function ChartGlobalLifeSpanInEU() {
   // --- FETCH DATA  ---
   useEffect(() => {
     setLoadingDataPib(true);
-    fetch("https://sae303-dataviz.herokuapp.com/api/pib")
+    fetch("http://localhost:3000/api/pib")
       .then((res) => res.json())
       .then((data) => {
         console.log(data);
@@ -44,7 +44,7 @@ export default function ChartGlobalLifeSpanInEU() {
   // --- FETCH DATA  ---
   useEffect(() => {
     setLoadingDataHci(true);
-    fetch("https://sae303-dataviz.herokuapp.com/api/hci")
+    fetch("http://localhost:3000/api/hci")
       .then((res) => res.json())
       .then((data) => {
         console.log(data);
@@ -55,7 +55,7 @@ export default function ChartGlobalLifeSpanInEU() {
   // --- FETCH DATA  ---
   useEffect(() => {
     setLoadingDataSanitationServices(true);
-    fetch("https://sae303-dataviz.herokuapp.com/api/sanitationServices")
+    fetch("http://localhost:3000/api/sanitationServices")
       .then((res) => res.json())
       .then((data) => {
         console.log(data);
@@ -343,7 +343,7 @@ export default function ChartGlobalLifeSpanInEU() {
             axisLine: {
               show: true,
               lineStyle: {
-                color: "#F05638",
+                color: "#0891b2",
               },
             },
             min: 10000, // if delete animationDurationUpdate: 1500, universalTransition: true, in series
@@ -375,7 +375,7 @@ export default function ChartGlobalLifeSpanInEU() {
             data: dataPibByCountry,
             type: "line",
             lineStyle: {
-              color: "#F05638",
+              color: "#0891b2",
             },
           },
         ],
@@ -550,13 +550,13 @@ export default function ChartGlobalLifeSpanInEU() {
           {
             show: true,
             type: "value",
-            name: "HCI",
+            name: "IDH",
             min: 0.55, // if delete animationDurationUpdate: 1500, universalTransition: true, in series
             max: 0.8,
             axisLine: {
               show: true,
               lineStyle: {
-                color: "#995498",
+                color: "#4338ca",
               },
             },
             // min: 73, // if delete animationDurationUpdate: 1500, universalTransition: true, in series
@@ -589,7 +589,7 @@ export default function ChartGlobalLifeSpanInEU() {
             type: "line",
             smooth: true,
             lineStyle: {
-              color: "#995498",
+              color: "#4338ca",
             },
           },
         ],
@@ -598,14 +598,14 @@ export default function ChartGlobalLifeSpanInEU() {
       console.log(options);
       // SET OPTION WHEN SCROLL
       window.addEventListener("scroll", () => {
-        if (window.scrollY >= 1000) {
+        if (window.scrollY >= 800) {
           // if screen is large
           setOptions(OPTION_BAR_LIFE_SPAN);
-          if (window.scrollY >= 1500) {
+          if (window.scrollY >= 1700) {
             setOptions(OPTION_BAR_LIFE_SPAN_AND_PIB);
-            if (window.scrollY >= 2000) {
+            if (window.scrollY >= 2500) {
               setOptions(OPTION_BAR_LIFE_SPAN_AND_HCI);
-              if (window.scrollY >= 2500) {
+              if (window.scrollY >= 3000) {
                 setOptions(OPTION_BAR_LIFE_SPAN_SANITATION_SERVICES);
               } else {
                 setOptions(OPTION_BAR_LIFE_SPAN_AND_HCI);

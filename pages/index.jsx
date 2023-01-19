@@ -1,4 +1,5 @@
 import Chart from "../components/Chart";
+import Link from "next/link";
 import Navbar from "../components/Navbar";
 import { motion } from "framer-motion";
 import { useEffect, useState, useRef } from "react";
@@ -21,18 +22,16 @@ export default function index() {
 
     const max = document.body.scrollHeight - window.innerHeight;
     window.addEventListener("scroll", (e) => {
-      if (window.scrollY > 420) {
+      if (window.scrollY >= 400) {
         if (chart.current != null) {
-          chart.current.style.pointerEvents = "auto";
           chart.current.style = "opacity: 1";
-          // pointer-events: auto;
-          // pointer-events: none;
+          // how remove classlist pointer-events-none  ?
+          chart.current.classList.remove("pointer-events-none");
         }
       } else {
-        // chart.current.classList.remove("opacity-100");
         if (chart.current != null) {
-          chart.current.style.pointerEvents = "none";
           chart.current.style = "opacity: 0";
+          chart.current.classList.add("pointer-events-none");
         }
       }
       const scroll = window.scrollY;
@@ -79,154 +78,162 @@ export default function index() {
           </section>
         </section>
 
-        <div className="prose">
-          <h1>intro sur les donnée de l'esperance de vie en vie </h1>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque
-            asperiores quos amet atque in dolores voluptatum iure odit,
-            sapiente, doloremque dolorem officiis, aliquam laboriosam. Totam
-            deserunt consectetur dolores optio asperiores!
-          </p>
-        </div>
         <div
           ref={chart}
-          className="chart w-100 lg:w-50vw lg:top-1/2 lg:fixed lg:left-1/2 lg:mt-30 opacity-0 transition-opacity"
+          className="chart w-50vw top-1/3 fixed left-1/3 ml-28 opacity-0 transition-opacity pointer-events-none"
         >
           <Chart />
         </div>
-        <section className="w-50vw">
-          <section className="w-100vw lg:w-50vw m-5 ">
-            <article className="prose">
-              <h4>L'espérance de vie dans l'union européenne</h4>
-              <p>
-                L'espérance de vie à la naissance est un indicateur de la santé
-                publique. Elle est calculée en moyenne sur une population donnée
-                et est exprimée en années. Elle est calculée à partir des
-                données recueillies par l'Insee dans le cadre du recensement de
-                la population et de l'enquête sur la santé des ménages.
-              </p>
-              <p>
-                L'espérance de vie à la naissance est un indicateur de la santé
-                publique. Elle est calculée en moyenne sur une population donnée
-                et est exprimée en années. Elle est calculée à partir des
-                données recueillies par l'Insee dans le cadre du recensement de
-                la population et de l'enquête sur la santé des ménages.
-              </p>
-              <p>
-                L'espérance de vie à la naissance est un indicateur de la santé
-                publique. Elle est calculée en moyenne sur une population donnée
-                et est exprimée en années. Elle est calculée à partir des
-                données recueillies par l'Insee dans le cadre du recensement de
-                la population et de l'enquête sur la santé des ménages.
-              </p>
-              <p>
-                L'espérance de vie à la naissance est un indicateur de la santé
-                publique. Elle est calculée en moyenne sur une population donnée
-                et est exprimée en années. Elle est calculée à partir des
-                données recueillies par l'Insee dans le cadre du recensement de
-                la population et de l'enquête sur la santé des ménages.
-              </p>
-              <p>
-                L'espérance de vie à la naissance est un indicateur de la santé
-                publique. Elle est calculée en moyenne sur une population donnée
-                et est exprimée en années. Elle est calculée à partir des
-                données recueillies par l'Insee dans le cadre du recensement de
-                la population et de l'enquête sur la santé des ménages.
-              </p>
-              <p>
-                L'espérance de vie à la naissance est un indicateur de la santé
-                publique. Elle est calculée en moyenne sur une population donnée
-                et est exprimée en années. Elle est calculée à partir des
-                données recueillies par l'Insee dans le cadre du recensement de
-                la population et de l'enquête sur la santé des ménages.
-              </p>
-              <p>
-                L'espérance de vie à la naissance est un indicateur de la santé
-                publique. Elle est calculée en moyenne sur une population donnée
-                et est exprimée en années. Elle est calculée à partir des
-                données recueillies par l'Insee dans le cadre du recensement de
-                la population et de l'enquête sur la santé des ménages.
-              </p>
-              <p>
-                L'espérance de vie à la naissance est un indicateur de la santé
-                publique. Elle est calculée en moyenne sur une population donnée
-                et est exprimée en années. Elle est calculée à partir des
-                données recueillies par l'Insee dans le cadre du recensement de
-                la population et de l'enquête sur la santé des ménages.
-              </p>
-              <p>
-                L'espérance de vie à la naissance est un indicateur de la santé
-                publique. Elle est calculée en moyenne sur une population donnée
-                et est exprimée en années. Elle est calculée à partir des
-                données recueillies par l'Insee dans le cadre du recensement de
-                la population et de l'enquête sur la santé des ménages.
-              </p>
-              <p>
-                L'espérance de vie à la naissance est un indicateur de la santé
-                publique. Elle est calculée en moyenne sur une population donnée
-                et est exprimée en années. Elle est calculée à partir des
-                données recueillies par l'Insee dans le cadre du recensement de
-                la population et de l'enquête sur la santé des ménages.
-              </p>
-              <p>
-                L'espérance de vie à la naissance est un indicateur de la santé
-                publique. Elle est calculée en moyenne sur une population donnée
-                et est exprimée en années. Elle est calculée à partir des
-                données recueillies par l'Insee dans le cadre du recensement de
-                la population et de l'enquête sur la santé des ménages.
-              </p>
-              <p>
-                L'espérance de vie à la naissance est un indicateur de la santé
-                publique. Elle est calculée en moyenne sur une population donnée
-                et est exprimée en années. Elle est calculée à partir des
-                données recueillies par l'Insee dans le cadre du recensement de
-                la population et de l'enquête sur la santé des ménages.
-              </p>
-              <p>
-                L'espérance de vie à la naissance est un indicateur de la santé
-                publique. Elle est calculée en moyenne sur une population donnée
-                et est exprimée en années. Elle est calculée à partir des
-                données recueillies par l'Insee dans le cadre du recensement de
-                la population et de l'enquête sur la santé des ménages.
-              </p>
-              <p>
-                L'espérance de vie à la naissance est un indicateur de la santé
-                publique. Elle est calculée en moyenne sur une population donnée
-                et est exprimée en années. Elle est calculée à partir des
-                données recueillies par l'Insee dans le cadre du recensement de
-                la population et de l'enquête sur la santé des ménages.
-              </p>
-              <p>
-                L'espérance de vie à la naissance est un indicateur de la santé
-                publique. Elle est calculée en moyenne sur une population donnée
-                et est exprimée en années. Elle est calculée à partir des
-                données recueillies par l'Insee dans le cadre du recensement de
-                la population et de l'enquête sur la santé des ménages.
-              </p>
-              <p>
-                L'espérance de vie à la naissance est un indicateur de la santé
-                publique. Elle est calculée en moyenne sur une population donnée
-                et est exprimée en années. Elle est calculée à partir des
-                données recueillies par l'Insee dans le cadre du recensement de
-                la population et de l'enquête sur la santé des ménages.
-              </p>
-              <p>
-                L'espérance de vie à la naissance est un indicateur de la santé
-                publique. Elle est calculée en moyenne sur une population donnée
-                et est exprimée en années. Elle est calculée à partir des
-                données recueillies par l'Insee dans le cadre du recensement de
-                la population et de l'enquête sur la santé des ménages.
-              </p>
-              <p>
-                L'espérance de vie à la naissance est un indicateur de la santé
-                publique. Elle est calculée en moyenne sur une population donnée
-                et est exprimée en années. Elle est calculée à partir des
-                données recueillies par l'Insee dans le cadre du recensement de
-                la population et de l'enquête sur la santé des ménages.
-              </p>
-            </article>
-          </section>
+        <section className="w-100vw lg:w-30vw m-5 prose mb-52">
+          <h2 className="text-primary">Cartographie de l'union européenne</h2>
+          <p>
+            La carte nous montre les pays de l'Union Européenne sous différentes
+            densités de couleur allant du
+            <span className="text-primary"> vert</span>, les pays avec une
+            espérance de vie élevés au
+            <span className="text-error"> rose </span> au moins élevé.
+          </p>
+          <p>
+            Les données sur l'espérance de vie sont sur l'année 2020 et
+            proviennent de la banque mondiale.
+          </p>
+          <p>
+            Vous pouvez interagir avec la carte en passant sur les pays ou en
+            jouant avec {/* color: ["#eb9494", "#496552"], */}
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-red-200 to-green-900 font-bold">
+              la barre de densité{" "}
+            </span>
+            en légende.
+          </p>
         </section>
+        <section className="w-100vw lg:w-30vw m-5 prose  mb-52 ">
+          <h2 className="text-primary">
+            Quel est le pays avec la plus grande espérance de vie ?
+          </h2>
+          <p>
+            D'après les données de la banque mondiale, en 2020, le pays avec la
+            plus grande espérance de vie est{" "}
+            <span className="text-primary">Malte</span> avec environ{" "}
+            <span className="text-primary">82 ans </span>, au contraire la
+            <span className="text-error"> Bulgarie</span> où l'espérance de vie
+            est la plus faible avec environ{" "}
+            <span className="text-error">72 ans</span>.
+          </p>
+          <p>
+            Nous pouvons constatés que les pays du nord de l'Europe, comme le
+            <span className="text-primary">Danemark</span> et{" "}
+            <span className="text-primary">les pays scandinaves</span> ont
+            l'éspérance les plus élevées, avec des moyennes de{" "}
+            <span className="text-primary">80 ans</span> et plus. A l'inverse,
+            <span className="text-error">les pays de l'est</span> de l'Union
+            Européenne, comme la <span className="text-error"> Bulgarie</span>{" "}
+            et la <span className="text-error"> Roumanie</span>, ont des
+            espérances de vie plus faibles, avec des moyennes de moins de{" "}
+            <span className="text-error">75 ans</span>. Il est intéressant de
+            noter que les différences entre les pays sont assez marquées, avec
+            des écarts de plus de <span className="font-bold">10 ans </span>
+            entre certains pays.
+          </p>
+          <h4>Comment expliquer cette différence ?</h4>
+        </section>
+        <section className="w-100vw lg:w-30vw m-5 prose   mb-52">
+          <h2 className="text-primary">Le PIB du pays</h2>
+          <p>
+            Le{" "}
+            <span className="text-cyan-600">
+              produit intérieur brut (PIB) est l'indicateur
+            </span>{" "}
+            économique qui permet de quantifier la valeur totale de la «
+            production de richesse » annuelle effectuée par les agents
+            économiques (ménages, entreprises, administrations publiques)
+            résidant à l'intérieur d'un territoire. Le{" "}
+            <span className="text-cyan-600">PIB</span>
+            est le principal indicateur de la mesure de la production économique
+            réalisée à l’intérieur d'un pays et l'un des agrégats majeurs des
+            comptes nationaux. Le <span className="text-cyan-600">
+              PIB
+            </span>{" "}
+            reflète donc l'activité économique interne d'un pays et la variation
+            du <span className="text-cyan-600">PIB</span> d'une période à
+            l'autre est censée mesurer son taux de croissance économique.
+          </p>
+          <p>
+            Nous pouvons constatés que le{" "}
+            <span className="text-cyan-600">PIB</span> et l'éspérance de vie son
+            lié. En effet, les pays ayant les
+            <span className="text-cyan-600">PIB</span> les plus faible on
+            l'éspérance de vie les plsu basses comme la{" "}
+            <span className="text-error">Lettonie</span> et la{" "}
+            <span className="text-error">Hongrie</span>. Mais, les pays avec un
+            PIB plus élevé comme la <span className="text-primary">France</span>{" "}
+            ou la <span className="text-primary">Suède</span> ont une espérance
+            de vie plus élevé.
+          </p>
+          <p>
+            Les données sont datées de 2020 et proviennet des comptes nationaux
+            de la Banque mondiale et des fichiers de données sur les comptes
+            nationaux de l'OCDE.
+          </p>
+        </section>
+        <section className="w-100vw lg:w-30vw m-5 prose   mb-52">
+          <h2 className="text-primary">
+            IDH - L'indice de développement humain
+          </h2>
+          <p>
+            L'
+            <span className="text-indigo-700">
+              indice de développement humain (IDH)
+            </span>{" "}
+            est un indicateur démontrant l'investissement dans le capital humain
+            c'est-à-dire dans la population, se mesure par la survie, la
+            scolarité et la santé.
+          </p>
+          <p>
+            Tout comme pour le <span className="text-cyan-600">PIB</span>, l'
+            <span className="text-indigo-700">IDH</span> influe sur l'éspérance
+            de vie, malgré quelques exceptions comme le{" "}
+            <span className="text-primary">Luxembourg</span> ayant un{" "}
+            <span className="text-indigo-700">IDH</span> faible comparé à son
+            éspérance de vie ou l'inverse, la{" "}
+            <span className="text-error">Pologne</span> ayant un{" "}
+            <span className="text-indigo-700">IDH </span>
+            élevé mais une espérance de vie un peu plus faible.
+          </p>
+          <p>
+            Calculs des services de la Banque mondiale, à partir de la
+            méthodologie décrite dans{" "}
+            <Link
+              target="_blank"
+              href="https://documents.worldbank.org/en/publication/documents-reports/documentdetail/300071537907028892/methodology-for-a-world-bank-human-capital-index"
+            >
+              Kraay
+            </Link>
+            .
+          </p>
+        </section>
+        <section className="w-100vw lg:w-30vw m-5 prose mb-52">
+          <h2 className="text-primary">SANITAION SERVIES</h2>
+          <p>
+            La carte nous montre les pays de l'Union Européenne sous différentes
+            densités de couleur allant du
+            <span className="text-primary"> vert</span>, les pays avec une
+            espérance de vie élevés au
+            <span className="text-error"> rose </span> au moins élevé.
+          </p>
+          <p>
+            Les données sur l'espérance de vie sont sur l'année 2020 et
+            proviennent de la banque mondiale.
+          </p>
+          <p>
+            Vous pouvez interagir avec la carte en passant sur les pays ou en
+            jouant avec {/* color: ["#eb9494", "#496552"], */}
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-red-200 to-green-900 font-bold">
+              la barre de densité{" "}
+            </span>
+            en légende.
+          </p>
+        </section>
+        <section style={{ height: "25px" }}></section>
       </main>
     );
   } else {

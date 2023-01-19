@@ -7,7 +7,10 @@ module.exports = {
   theme: {
     width: {
       "10vw": "10vw",
+      "20vw": "20vw",
+      "30vw": "30vw",
       "50vw": "50vw",
+
       "100vw": "100vw",
       "120vw": "120vw",
       "150vw": "150vw",
