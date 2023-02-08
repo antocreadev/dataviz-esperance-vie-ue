@@ -8,7 +8,7 @@ export default function index() {
   const [isWindow, SetIsWindow] = useState(false);
   const [scrollY, SetScrollY] = useState(null);
   const chart = useRef(null);
-  const currentUrl = window.location.href;
+
   // IS WINDOW ?
   useEffect(() => {
     if (isWindow == undefined) {
@@ -17,16 +17,21 @@ export default function index() {
       SetIsWindow(true);
     }
   }, []);
-  if (currentUrl == "https://sae303-dataviz.herokuapp.com/") {
-    return (
-      <p>
-        Nouvelle URL :{" "}
-        <a href="https://dataviz-europa.antocrea.dev/">
-          dataviz-europa.antocrea.dev
-        </a>
-      </p>
-    );
+  if (isWindow == true) {
+    const currentUrl = window.location.href;
+    if (currentUrl == "https://sae303-dataviz.herokuapp.com/") {
+      return (
+        <p>
+          Nouvelle URL :{" "}
+          <a href="https://dataviz-europa.antocrea.dev/">
+            dataviz-europa.antocrea.dev
+          </a>
+          {window.location.replace("https://dataviz-europa.antocrea.dev/")}
+        </p>
+      );
+    }
   }
+
   if (isWindow == true) {
     // SCROLL
 
