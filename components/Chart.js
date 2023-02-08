@@ -22,7 +22,7 @@ export default function ChartGlobalLifeSpanInEU() {
   useEffect(() => {
     setLoadingData(true);
     // fetch(" /api/hello")
-    fetch("https://sae303-dataviz.herokuapp.com/api/lifespan")
+    fetch("https://dataviz-europa.antocrea.dev/api/lifespan")
       .then((res) => res.json())
       .then((data) => {
         console.log(data);
@@ -33,7 +33,7 @@ export default function ChartGlobalLifeSpanInEU() {
   // --- FETCH DATA  ---
   useEffect(() => {
     setLoadingDataPib(true);
-    fetch("https://sae303-dataviz.herokuapp.com/api/pib")
+    fetch("https://dataviz-europa.antocrea.dev/api/pib")
       .then((res) => res.json())
       .then((data) => {
         console.log(data);
@@ -44,7 +44,7 @@ export default function ChartGlobalLifeSpanInEU() {
   // --- FETCH DATA  ---
   useEffect(() => {
     setLoadingDataHci(true);
-    fetch("https://sae303-dataviz.herokuapp.com/api/hci")
+    fetch("https://dataviz-europa.antocrea.dev/api/hci")
       .then((res) => res.json())
       .then((data) => {
         console.log(data);
@@ -55,7 +55,7 @@ export default function ChartGlobalLifeSpanInEU() {
   // --- FETCH DATA  ---
   useEffect(() => {
     setLoadingDataSanitationServices(true);
-    fetch("https://sae303-dataviz.herokuapp.com/api/sanitationServices")
+    fetch("https://dataviz-europa.antocrea.dev/api/sanitationServices")
       .then((res) => res.json())
       .then((data) => {
         console.log(data);

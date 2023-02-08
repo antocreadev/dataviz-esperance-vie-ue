@@ -9,7 +9,7 @@ export default function ChartGlobalLifeSpanInEU() {
   // --- FETCH DATA  ---
   useEffect(() => {
     setLoadingData(true);
-    fetch("https://sae303-dataviz.herokuapp.com/api/hello")
+    fetch("https://dataviz-europa.antocrea.dev/api/hello")
       .then((res) => res.json())
       .then((data) => {
         setData(data);
