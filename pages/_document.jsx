@@ -20,7 +20,7 @@ class MyDocument extends Document {
           <meta name="robots" content="index" />
           <title>DataViz - Life Span | Anto CreaDev </title>
         </Head>
-        <body>
+        <body data-theme="garden">
           <Main />
           <NextScript />
         </body>
