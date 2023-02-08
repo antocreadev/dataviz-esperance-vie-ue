@@ -3,12 +3,10 @@ export default function Navbar() {
   return (
     <nav className="navbar">
       <Link href="./" className="btn btn-ghost normal-case text-xl">
-        <span>DataViz - LifeSpan</span>
+        <span>DataViz - life span in the European Union</span>
       </Link>
 
-      <Link href="#home">
-        <span>Home</span>
-      </Link>
+      <p>Anthony Menghi</p>
     </nav>
   );
 }

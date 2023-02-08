@@ -18,6 +18,7 @@ export default function index() {
     }
   }, []);
   if (isWindow == true) {
+    // IF URL IS CORRECT
     const currentUrl = window.location.href;
     if (currentUrl == "https://sae303-dataviz.herokuapp.com/") {
       return (
@@ -31,10 +32,8 @@ export default function index() {
       );
     }
   }
-
   if (isWindow == true) {
     // SCROLL
-
     const max = document.body.scrollHeight - window.innerHeight;
     window.addEventListener("scroll", (e) => {
       if (window.scrollY >= 400) {
@@ -176,7 +175,7 @@ export default function index() {
             Nous pouvons constater que le{" "}
             <span className="text-cyan-600">PIB</span> et l'espérance de vie son
             lié. En effet, les pays ayant les
-            <span className="text-cyan-600">PIB</span> les plus faibles ont
+            <span className="text-cyan-600"> PIB</span> les plus faibles ont
             l'espérance de vie la plus basse comme la{" "}
             <span className="text-error">Lettonie</span> et la{" "}
             <span className="text-error">Hongrie</span>. Mais, les pays avec un
