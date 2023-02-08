@@ -9,6 +9,14 @@ export default function index() {
   const [scrollY, SetScrollY] = useState(null);
   const chart = useRef(null);
   const currentUrl = window.location.href;
+  // IS WINDOW ?
+  useEffect(() => {
+    if (isWindow == undefined) {
+      SetIsWindow(false);
+    } else {
+      SetIsWindow(true);
+    }
+  }, []);
   if (
     currentUrl == "https://sae303-dataviz.herokuapp.com/" &&
     isWindow == true
@@ -23,14 +31,6 @@ export default function index() {
       </p>
     );
   }
-  // IS WINDOW ?
-  useEffect(() => {
-    if (isWindow == undefined) {
-      SetIsWindow(false);
-    } else {
-      SetIsWindow(true);
-    }
-  }, []);
   if (isWindow == true) {
     // SCROLL
 
