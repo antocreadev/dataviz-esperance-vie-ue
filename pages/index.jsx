@@ -17,17 +17,13 @@ export default function index() {
       SetIsWindow(true);
     }
   }, []);
-  if (
-    currentUrl == "https://sae303-dataviz.herokuapp.com/" &&
-    isWindow == true
-  ) {
+  if (currentUrl == "https://sae303-dataviz.herokuapp.com/") {
     return (
       <p>
         Nouvelle URL :{" "}
         <a href="https://dataviz-europa.antocrea.dev/">
           dataviz-europa.antocrea.dev
         </a>
-        {window.location.replace("https://dataviz-europa.antocrea.dev/")}
       </p>
     );
   }
