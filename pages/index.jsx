@@ -65,7 +65,7 @@ export default function index() {
         ></progress>
         <Navbar />
         <section
-          style={{ height: "100vh", display: "flex", alignItems: "center" }}
+          style={{ height: "100vh", display: "flex", alignItems: "center", backgroundColor : "white" }}
           className="w-100vw"
         >
           <motion.img
