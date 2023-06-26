@@ -1,0 +1,602 @@
+{
+  "Root": {
+    "data": {
+      "record": [
+        {
+          "field": [
+            {
+              "@name": "Country or Area",
+              "@key": "BGR",
+              "#text": "Bulgarie"
+            },
+            {
+              "@name": "Item",
+              "@key": "NY.GDP.PCAP.CD",
+              "#text": "PIB par habitant ($US courants)"
+            },
+            {
+              "@name": "Year",
+              "#text": "2020"
+            },
+            {
+              "@name": "Value",
+              "#text": "10079.2033812203"
+            }
+          ]
+        },
+        {
+          "field": [
+            {
+              "@name": "Country or Area",
+              "@key": "ROU",
+              "#text": "Roumanie"
+            },
+            {
+              "@name": "Item",
+              "@key": "NY.GDP.PCAP.CD",
+              "#text": "PIB par habitant ($US courants)"
+            },
+            {
+              "@name": "Year",
+              "#text": "2020"
+            },
+            {
+              "@name": "Value",
+              "#text": "12956.5662477568"
+            }
+          ]
+        },
+        {
+          "field": [
+            {
+              "@name": "Country or Area",
+              "@key": "LTU",
+              "#text": "Lituanie"
+            },
+            {
+              "@name": "Item",
+              "@key": "NY.GDP.PCAP.CD",
+              "#text": "PIB par habitant ($US courants)"
+            },
+            {
+              "@name": "Year",
+              "#text": "2020"
+            },
+            {
+              "@name": "Value",
+              "#text": "20232.3020358588"
+            }
+          ]
+        },
+        {
+          "field": [
+            {
+              "@name": "Country or Area",
+              "@key": "LVA",
+              "#text": "Lettonie"
+            },
+            {
+              "@name": "Item",
+              "@key": "NY.GDP.PCAP.CD",
+              "#text": "PIB par habitant ($US courants)"
+            },
+            {
+              "@name": "Year",
+              "#text": "2020"
+            },
+            {
+              "@name": "Value",
+              "#text": "17703.9534432332"
+            }
+          ]
+        },
+        {
+          "field": [
+            {
+              "@name": "Country or Area",
+              "@key": "HUN",
+              "#text": "Hongrie"
+            },
+            {
+              "@name": "Item",
+              "@key": "NY.GDP.PCAP.CD",
+              "#text": "PIB par habitant ($US courants)"
+            },
+            {
+              "@name": "Year",
+              "#text": "2020"
+            },
+            {
+              "@name": "Value",
+              "#text": "16075.9732662505"
+            }
+          ]
+        },
+        {
+          "field": [
+            {
+              "@name": "Country or Area",
+              "@key": "POL",
+              "#text": "Pologne"
+            },
+            {
+              "@name": "Item",
+              "@key": "NY.GDP.PCAP.CD",
+              "#text": "PIB par habitant ($US courants)"
+            },
+            {
+              "@name": "Year",
+              "#text": "2020"
+            },
+            {
+              "@name": "Value",
+              "#text": "15742.4537256368"
+            }
+          ]
+        },
+        {
+          "field": [
+            {
+              "@name": "Country or Area",
+              "@key": "SVK",
+              "#text": "R\u00e9publique slovaque"
+            },
+            {
+              "@name": "Item",
+              "@key": "NY.GDP.PCAP.CD",
+              "#text": "PIB par habitant ($US courants)"
+            },
+            {
+              "@name": "Year",
+              "#text": "2020"
+            },
+            {
+              "@name": "Value",
+              "#text": "19266.5135736247"
+            }
+          ]
+        },
+        {
+          "field": [
+            {
+              "@name": "Country or Area",
+              "@key": "HRV",
+              "#text": "Croatie"
+            },
+            {
+              "@name": "Item",
+              "@key": "NY.GDP.PCAP.CD",
+              "#text": "PIB par habitant ($US courants)"
+            },
+            {
+              "@name": "Year",
+              "#text": "2020"
+            },
+            {
+              "@name": "Value",
+              "#text": "14132.4865609499"
+            }
+          ]
+        },
+        {
+          "field": [
+            {
+              "@name": "Country or Area",
+              "@key": "CZE",
+              "#text": "R\u00e9publique tch\u00e8que"
+            },
+            {
+              "@name": "Item",
+              "@key": "NY.GDP.PCAP.CD",
+              "#text": "PIB par habitant ($US courants)"
+            },
+            {
+              "@name": "Year",
+              "#text": "2020"
+            },
+            {
+              "@name": "Value",
+              "#text": "22933.4995909236"
+            }
+          ]
+        },
+        {
+          "field": [
+            {
+              "@name": "Country or Area",
+              "@key": "EST",
+              "#text": "Estonie"
+            },
+            {
+              "@name": "Item",
+              "@key": "NY.GDP.PCAP.CD",
+              "#text": "PIB par habitant ($US courants)"
+            },
+            {
+              "@name": "Year",
+              "#text": "2020"
+            },
+            {
+              "@name": "Value",
+              "#text": "23054.3584905978"
+            }
+          ]
+        },
+        {
+          "field": [
+            {
+              "@name": "Country or Area",
+              "@key": "SVN",
+              "#text": "Slov\u00e9nie"
+            },
+            {
+              "@name": "Item",
+              "@key": "NY.GDP.PCAP.CD",
+              "#text": "PIB par habitant ($US courants)"
+            },
+            {
+              "@name": "Year",
+              "#text": "2020"
+            },
+            {
+              "@name": "Value",
+              "#text": "25489.5002284083"
+            }
+          ]
+        },
+        {
+          "field": [
+            {
+              "@name": "Country or Area",
+              "@key": "BEL",
+              "#text": "Belgique"
+            },
+            {
+              "@name": "Item",
+              "@key": "NY.GDP.PCAP.CD",
+              "#text": "PIB par habitant ($US courants)"
+            },
+            {
+              "@name": "Year",
+              "#text": "2020"
+            },
+            {
+              "@name": "Value",
+              "#text": "45189.3669003126"
+            }
+          ]
+        },
+        {
+          "field": [
+            {
+              "@name": "Country or Area",
+              "@key": "CYP",
+              "#text": "Chypre"
+            },
+            {
+              "@name": "Item",
+              "@key": "NY.GDP.PCAP.CD",
+              "#text": "PIB par habitant ($US courants)"
+            },
+            {
+              "@name": "Year",
+              "#text": "2020"
+            },
+            {
+              "@name": "Value",
+              "#text": "27681.56640625"
+            }
+          ]
+        },
+        {
+          "field": [
+            {
+              "@name": "Country or Area",
+              "@key": "DEU",
+              "#text": "Allemagne"
+            },
+            {
+              "@name": "Item",
+              "@key": "NY.GDP.PCAP.CD",
+              "#text": "PIB par habitant ($US courants)"
+            },
+            {
+              "@name": "Year",
+              "#text": "2020"
+            },
+            {
+              "@name": "Value",
+              "#text": "46252.6893044892"
+            }
+          ]
+        },
+        {
+          "field": [
+            {
+              "@name": "Country or Area",
+              "@key": "PRT",
+              "#text": "Portugal"
+            },
+            {
+              "@name": "Item",
+              "@key": "NY.GDP.PCAP.CD",
+              "#text": "PIB par habitant ($US courants)"
+            },
+            {
+              "@name": "Year",
+              "#text": "2020"
+            },
+            {
+              "@name": "Value",
+              "#text": "22194.566114935"
+            }
+          ]
+        },
+        {
+          "field": [
+            {
+              "@name": "Country or Area",
+              "@key": "GRC",
+              "#text": "Gr\u00e8ce"
+            },
+            {
+              "@name": "Item",
+              "@key": "NY.GDP.PCAP.CD",
+              "#text": "PIB par habitant ($US courants)"
+            },
+            {
+              "@name": "Year",
+              "#text": "2020"
+            },
+            {
+              "@name": "Value",
+              "#text": "17647.2326882744"
+            }
+          ]
+        },
+        {
+          "field": [
+            {
+              "@name": "Country or Area",
+              "@key": "AUT",
+              "#text": "Autriche"
+            },
+            {
+              "@name": "Item",
+              "@key": "NY.GDP.PCAP.CD",
+              "#text": "PIB par habitant ($US courants)"
+            },
+            {
+              "@name": "Year",
+              "#text": "2020"
+            },
+            {
+              "@name": "Value",
+              "#text": "48588.6593847921"
+            }
+          ]
+        },
+        {
+          "field": [
+            {
+              "@name": "Country or Area",
+              "@key": "NLD",
+              "#text": "Pays-Bas"
+            },
+            {
+              "@name": "Item",
+              "@key": "NY.GDP.PCAP.CD",
+              "#text": "PIB par habitant ($US courants)"
+            },
+            {
+              "@name": "Year",
+              "#text": "2020"
+            },
+            {
+              "@name": "Value",
+              "#text": "52396.0322099525"
+            }
+          ]
+        },
+        {
+          "field": [
+            {
+              "@name": "Country or Area",
+              "@key": "DNK",
+              "#text": "Danemark"
+            },
+            {
+              "@name": "Item",
+              "@key": "NY.GDP.PCAP.CD",
+              "#text": "PIB par habitant ($US courants)"
+            },
+            {
+              "@name": "Year",
+              "#text": "2020"
+            },
+            {
+              "@name": "Value",
+              "#text": "61063.3164304238"
+            }
+          ]
+        },
+        {
+          "field": [
+            {
+              "@name": "Country or Area",
+              "@key": "LUX",
+              "#text": "Luxembourg"
+            },
+            {
+              "@name": "Item",
+              "@key": "NY.GDP.PCAP.CD",
+              "#text": "PIB par habitant ($US courants)"
+            },
+            {
+              "@name": "Year",
+              "#text": "2020"
+            },
+            {
+              "@name": "Value",
+              "#text": "116356.158037286"
+            }
+          ]
+        },
+        {
+          "field": [
+            {
+              "@name": "Country or Area",
+              "@key": "FIN",
+              "#text": "Finlande"
+            },
+            {
+              "@name": "Item",
+              "@key": "NY.GDP.PCAP.CD",
+              "#text": "PIB par habitant ($US courants)"
+            },
+            {
+              "@name": "Year",
+              "#text": "2020"
+            },
+            {
+              "@name": "Value",
+              "#text": "49160.8371522596"
+            }
+          ]
+        },
+        {
+          "field": [
+            {
+              "@name": "Country or Area",
+              "@key": "FRA",
+              "#text": "France"
+            },
+            {
+              "@name": "Item",
+              "@key": "NY.GDP.PCAP.CD",
+              "#text": "PIB par habitant ($US courants)"
+            },
+            {
+              "@name": "Year",
+              "#text": "2020"
+            },
+            {
+              "@name": "Value",
+              "#text": "39037.1226309074"
+            }
+          ]
+        },
+        {
+          "field": [
+            {
+              "@name": "Country or Area",
+              "@key": "IRL",
+              "#text": "Irlande"
+            },
+            {
+              "@name": "Item",
+              "@key": "NY.GDP.PCAP.CD",
+              "#text": "PIB par habitant ($US courants)"
+            },
+            {
+              "@name": "Year",
+              "#text": "2020"
+            },
+            {
+              "@name": "Value",
+              "#text": "85422.5428682266"
+            }
+          ]
+        },
+        {
+          "field": [
+            {
+              "@name": "Country or Area",
+              "@key": "ESP",
+              "#text": "Espagne"
+            },
+            {
+              "@name": "Item",
+              "@key": "NY.GDP.PCAP.CD",
+              "#text": "PIB par habitant ($US courants)"
+            },
+            {
+              "@name": "Year",
+              "#text": "2020"
+            },
+            {
+              "@name": "Value",
+              "#text": "27056.4217512166"
+            }
+          ]
+        },
+        {
+          "field": [
+            {
+              "@name": "Country or Area",
+              "@key": "ITA",
+              "#text": "Italie"
+            },
+            {
+              "@name": "Item",
+              "@key": "NY.GDP.PCAP.CD",
+              "#text": "PIB par habitant ($US courants)"
+            },
+            {
+              "@name": "Year",
+              "#text": "2020"
+            },
+            {
+              "@name": "Value",
+              "#text": "31834.9726184046"
+            }
+          ]
+        },
+        {
+          "field": [
+            {
+              "@name": "Country or Area",
+              "@key": "SWE",
+              "#text": "Su\u00e8de"
+            },
+            {
+              "@name": "Item",
+              "@key": "NY.GDP.PCAP.CD",
+              "#text": "PIB par habitant ($US courants)"
+            },
+            {
+              "@name": "Year",
+              "#text": "2020"
+            },
+            {
+              "@name": "Value",
+              "#text": "52300.2061994993"
+            }
+          ]
+        },
+        {
+          "field": [
+            {
+              "@name": "Country or Area",
+              "@key": "MLT",
+              "#text": "Malte"
+            },
+            {
+              "@name": "Item",
+              "@key": "NY.GDP.PCAP.CD",
+              "#text": "PIB par habitant ($US courants)"
+            },
+            {
+              "@name": "Year",
+              "#text": "2020"
+            },
+            {
+              "@name": "Value",
+              "#text": "28946.4626770412"
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

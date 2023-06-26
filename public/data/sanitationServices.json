@@ -1,0 +1,602 @@
+{
+  "Root": {
+    "data": {
+      "record": [
+        {
+          "field": [
+            {
+              "@name": "Country or Area",
+              "@key": "BGR",
+              "#text": "Bulgarie"
+            },
+            {
+              "@name": "Item",
+              "@key": "SH.STA.SMSS.ZS",
+              "#text": "People using safely managed sanitation services (% of population)"
+            },
+            {
+              "@name": "Year",
+              "#text": "2020"
+            },
+            {
+              "@name": "Value",
+              "#text": "72.22877412"
+            }
+          ]
+        },
+        {
+          "field": [
+            {
+              "@name": "Country or Area",
+              "@key": "ROU",
+              "#text": "Roumanie"
+            },
+            {
+              "@name": "Item",
+              "@key": "SH.STA.SMSS.ZS",
+              "#text": "People using safely managed sanitation services (% of population)"
+            },
+            {
+              "@name": "Year",
+              "#text": "2020"
+            },
+            {
+              "@name": "Value",
+              "#text": "83.14104863"
+            }
+          ]
+        },
+        {
+          "field": [
+            {
+              "@name": "Country or Area",
+              "@key": "LTU",
+              "#text": "Lituanie"
+            },
+            {
+              "@name": "Item",
+              "@key": "SH.STA.SMSS.ZS",
+              "#text": "People using safely managed sanitation services (% of population)"
+            },
+            {
+              "@name": "Year",
+              "#text": "2020"
+            },
+            {
+              "@name": "Value",
+              "#text": "93.93707198"
+            }
+          ]
+        },
+        {
+          "field": [
+            {
+              "@name": "Country or Area",
+              "@key": "LVA",
+              "#text": "Lettonie"
+            },
+            {
+              "@name": "Item",
+              "@key": "SH.STA.SMSS.ZS",
+              "#text": "People using safely managed sanitation services (% of population)"
+            },
+            {
+              "@name": "Year",
+              "#text": "2020"
+            },
+            {
+              "@name": "Value",
+              "#text": "83.40960117"
+            }
+          ]
+        },
+        {
+          "field": [
+            {
+              "@name": "Country or Area",
+              "@key": "HUN",
+              "#text": "Hongrie"
+            },
+            {
+              "@name": "Item",
+              "@key": "SH.STA.SMSS.ZS",
+              "#text": "People using safely managed sanitation services (% of population)"
+            },
+            {
+              "@name": "Year",
+              "#text": "2020"
+            },
+            {
+              "@name": "Value",
+              "#text": "87.7804865"
+            }
+          ]
+        },
+        {
+          "field": [
+            {
+              "@name": "Country or Area",
+              "@key": "POL",
+              "#text": "Pologne"
+            },
+            {
+              "@name": "Item",
+              "@key": "SH.STA.SMSS.ZS",
+              "#text": "People using safely managed sanitation services (% of population)"
+            },
+            {
+              "@name": "Year",
+              "#text": "2020"
+            },
+            {
+              "@name": "Value",
+              "#text": "90.54196321"
+            }
+          ]
+        },
+        {
+          "field": [
+            {
+              "@name": "Country or Area",
+              "@key": "SVK",
+              "#text": "R\u00e9publique slovaque"
+            },
+            {
+              "@name": "Item",
+              "@key": "SH.STA.SMSS.ZS",
+              "#text": "People using safely managed sanitation services (% of population)"
+            },
+            {
+              "@name": "Year",
+              "#text": "2020"
+            },
+            {
+              "@name": "Value",
+              "#text": "81.93498231"
+            }
+          ]
+        },
+        {
+          "field": [
+            {
+              "@name": "Country or Area",
+              "@key": "HRV",
+              "#text": "Croatie"
+            },
+            {
+              "@name": "Item",
+              "@key": "SH.STA.SMSS.ZS",
+              "#text": "People using safely managed sanitation services (% of population)"
+            },
+            {
+              "@name": "Year",
+              "#text": "2020"
+            },
+            {
+              "@name": "Value",
+              "#text": "67.78555485"
+            }
+          ]
+        },
+        {
+          "field": [
+            {
+              "@name": "Country or Area",
+              "@key": "CZE",
+              "#text": "R\u00e9publique tch\u00e8que"
+            },
+            {
+              "@name": "Item",
+              "@key": "SH.STA.SMSS.ZS",
+              "#text": "People using safely managed sanitation services (% of population)"
+            },
+            {
+              "@name": "Year",
+              "#text": "2020"
+            },
+            {
+              "@name": "Value",
+              "#text": "85.2044177"
+            }
+          ]
+        },
+        {
+          "field": [
+            {
+              "@name": "Country or Area",
+              "@key": "EST",
+              "#text": "Estonie"
+            },
+            {
+              "@name": "Item",
+              "@key": "SH.STA.SMSS.ZS",
+              "#text": "People using safely managed sanitation services (% of population)"
+            },
+            {
+              "@name": "Year",
+              "#text": "2020"
+            },
+            {
+              "@name": "Value",
+              "#text": "93.06072861"
+            }
+          ]
+        },
+        {
+          "field": [
+            {
+              "@name": "Country or Area",
+              "@key": "SVN",
+              "#text": "Slov\u00e9nie"
+            },
+            {
+              "@name": "Item",
+              "@key": "SH.STA.SMSS.ZS",
+              "#text": "People using safely managed sanitation services (% of population)"
+            },
+            {
+              "@name": "Year",
+              "#text": "2020"
+            },
+            {
+              "@name": "Value",
+              "#text": "71.54819663"
+            }
+          ]
+        },
+        {
+          "field": [
+            {
+              "@name": "Country or Area",
+              "@key": "BEL",
+              "#text": "Belgique"
+            },
+            {
+              "@name": "Item",
+              "@key": "SH.STA.SMSS.ZS",
+              "#text": "People using safely managed sanitation services (% of population)"
+            },
+            {
+              "@name": "Year",
+              "#text": "2020"
+            },
+            {
+              "@name": "Value",
+              "#text": "88.82071008"
+            }
+          ]
+        },
+        {
+          "field": [
+            {
+              "@name": "Country or Area",
+              "@key": "CYP",
+              "#text": "Chypre"
+            },
+            {
+              "@name": "Item",
+              "@key": "SH.STA.SMSS.ZS",
+              "#text": "People using safely managed sanitation services (% of population)"
+            },
+            {
+              "@name": "Year",
+              "#text": "2020"
+            },
+            {
+              "@name": "Value",
+              "#text": "77.08440429"
+            }
+          ]
+        },
+        {
+          "field": [
+            {
+              "@name": "Country or Area",
+              "@key": "DEU",
+              "#text": "Allemagne"
+            },
+            {
+              "@name": "Item",
+              "@key": "SH.STA.SMSS.ZS",
+              "#text": "People using safely managed sanitation services (% of population)"
+            },
+            {
+              "@name": "Year",
+              "#text": "2020"
+            },
+            {
+              "@name": "Value",
+              "#text": "97.12541087"
+            }
+          ]
+        },
+        {
+          "field": [
+            {
+              "@name": "Country or Area",
+              "@key": "PRT",
+              "#text": "Portugal"
+            },
+            {
+              "@name": "Item",
+              "@key": "SH.STA.SMSS.ZS",
+              "#text": "People using safely managed sanitation services (% of population)"
+            },
+            {
+              "@name": "Year",
+              "#text": "2020"
+            },
+            {
+              "@name": "Value",
+              "#text": "85.0813595"
+            }
+          ]
+        },
+        {
+          "field": [
+            {
+              "@name": "Country or Area",
+              "@key": "GRC",
+              "#text": "Gr\u00e8ce"
+            },
+            {
+              "@name": "Item",
+              "@key": "SH.STA.SMSS.ZS",
+              "#text": "People using safely managed sanitation services (% of population)"
+            },
+            {
+              "@name": "Year",
+              "#text": "2020"
+            },
+            {
+              "@name": "Value",
+              "#text": "91.71870529"
+            }
+          ]
+        },
+        {
+          "field": [
+            {
+              "@name": "Country or Area",
+              "@key": "AUT",
+              "#text": "Autriche"
+            },
+            {
+              "@name": "Item",
+              "@key": "SH.STA.SMSS.ZS",
+              "#text": "People using safely managed sanitation services (% of population)"
+            },
+            {
+              "@name": "Year",
+              "#text": "2020"
+            },
+            {
+              "@name": "Value",
+              "#text": "99.64252491"
+            }
+          ]
+        },
+        {
+          "field": [
+            {
+              "@name": "Country or Area",
+              "@key": "NLD",
+              "#text": "Pays-Bas"
+            },
+            {
+              "@name": "Item",
+              "@key": "SH.STA.SMSS.ZS",
+              "#text": "People using safely managed sanitation services (% of population)"
+            },
+            {
+              "@name": "Year",
+              "#text": "2020"
+            },
+            {
+              "@name": "Value",
+              "#text": "97.49706115"
+            }
+          ]
+        },
+        {
+          "field": [
+            {
+              "@name": "Country or Area",
+              "@key": "DNK",
+              "#text": "Danemark"
+            },
+            {
+              "@name": "Item",
+              "@key": "SH.STA.SMSS.ZS",
+              "#text": "People using safely managed sanitation services (% of population)"
+            },
+            {
+              "@name": "Year",
+              "#text": "2020"
+            },
+            {
+              "@name": "Value",
+              "#text": "91.88920329"
+            }
+          ]
+        },
+        {
+          "field": [
+            {
+              "@name": "Country or Area",
+              "@key": "LUX",
+              "#text": "Luxembourg"
+            },
+            {
+              "@name": "Item",
+              "@key": "SH.STA.SMSS.ZS",
+              "#text": "People using safely managed sanitation services (% of population)"
+            },
+            {
+              "@name": "Year",
+              "#text": "2020"
+            },
+            {
+              "@name": "Value",
+              "#text": "96.78404532"
+            }
+          ]
+        },
+        {
+          "field": [
+            {
+              "@name": "Country or Area",
+              "@key": "FIN",
+              "#text": "Finlande"
+            },
+            {
+              "@name": "Item",
+              "@key": "SH.STA.SMSS.ZS",
+              "#text": "People using safely managed sanitation services (% of population)"
+            },
+            {
+              "@name": "Year",
+              "#text": "2020"
+            },
+            {
+              "@name": "Value",
+              "#text": "84.09986144"
+            }
+          ]
+        },
+        {
+          "field": [
+            {
+              "@name": "Country or Area",
+              "@key": "FRA",
+              "#text": "France"
+            },
+            {
+              "@name": "Item",
+              "@key": "SH.STA.SMSS.ZS",
+              "#text": "People using safely managed sanitation services (% of population)"
+            },
+            {
+              "@name": "Year",
+              "#text": "2020"
+            },
+            {
+              "@name": "Value",
+              "#text": "78.5884767"
+            }
+          ]
+        },
+        {
+          "field": [
+            {
+              "@name": "Country or Area",
+              "@key": "IRL",
+              "#text": "Irlande"
+            },
+            {
+              "@name": "Item",
+              "@key": "SH.STA.SMSS.ZS",
+              "#text": "People using safely managed sanitation services (% of population)"
+            },
+            {
+              "@name": "Year",
+              "#text": "2020"
+            },
+            {
+              "@name": "Value",
+              "#text": "82.89898929"
+            }
+          ]
+        },
+        {
+          "field": [
+            {
+              "@name": "Country or Area",
+              "@key": "ESP",
+              "#text": "Espagne"
+            },
+            {
+              "@name": "Item",
+              "@key": "SH.STA.SMSS.ZS",
+              "#text": "People using safely managed sanitation services (% of population)"
+            },
+            {
+              "@name": "Year",
+              "#text": "2020"
+            },
+            {
+              "@name": "Value",
+              "#text": "95.66521712"
+            }
+          ]
+        },
+        {
+          "field": [
+            {
+              "@name": "Country or Area",
+              "@key": "ITA",
+              "#text": "Italie"
+            },
+            {
+              "@name": "Item",
+              "@key": "SH.STA.SMSS.ZS",
+              "#text": "People using safely managed sanitation services (% of population)"
+            },
+            {
+              "@name": "Year",
+              "#text": "2020"
+            },
+            {
+              "@name": "Value",
+              "#text": "95.78339507"
+            }
+          ]
+        },
+        {
+          "field": [
+            {
+              "@name": "Country or Area",
+              "@key": "SWE",
+              "#text": "Su\u00e8de"
+            },
+            {
+              "@name": "Item",
+              "@key": "SH.STA.SMSS.ZS",
+              "#text": "People using safely managed sanitation services (% of population)"
+            },
+            {
+              "@name": "Year",
+              "#text": "2020"
+            },
+            {
+              "@name": "Value",
+              "#text": "94.93116239"
+            }
+          ]
+        },
+        {
+          "field": [
+            {
+              "@name": "Country or Area",
+              "@key": "MLT",
+              "#text": "Malte"
+            },
+            {
+              "@name": "Item",
+              "@key": "SH.STA.SMSS.ZS",
+              "#text": "People using safely managed sanitation services (% of population)"
+            },
+            {
+              "@name": "Year",
+              "#text": "2020"
+            },
+            {
+              "@name": "Value",
+              "#text": "91.86797469"
+            }
+          ]
+        }
+      ]
+    }
+  }
+}
