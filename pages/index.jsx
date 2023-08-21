@@ -3,46 +3,58 @@ import Link from "next/link";
 import Navbar from "../components/Navbar";
 import { motion } from "framer-motion";
 import { useEffect, useState, useRef } from "react";
-
 export default function index() {
   // STATE
-  const [isWindow, setIsWindow] = useState(false);
-  const [scrollY, setScrollY] = useState(null);
+  const [isWindow, SetIsWindow] = useState(false);
+  const [scrollY, SetScrollY] = useState(null);
   const chart = useRef(null);
 
   // IS WINDOW ?
   useEffect(() => {
-    if (typeof isWindow === "undefined") {
-      setIsWindow(false);
+    if (isWindow == undefined) {
+      SetIsWindow(false);
     } else {
-      setIsWindow(true);
+      SetIsWindow(true);
     }
   }, []);
-
-  if (isWindow === true) {
+  if (isWindow == true) {
+    // IF URL IS CORRECT
+    const currentUrl = window.location.href;
+    if (currentUrl == "https://sae303-dataviz.herokuapp.com/") {
+      return (
+        <p>
+          Nouvelle URL :{" "}
+          <a href="https://dataviz-europa.antocrea.dev/">
+            dataviz-europa.antocrea.dev
+          </a>
+          {window.location.replace("https://dataviz-europa.antocrea.dev/")}
+        </p>
+      );
+    }
+  }
+  if (isWindow == true) {
     // SCROLL
     const max = document.body.scrollHeight - window.innerHeight;
     window.addEventListener("scroll", (e) => {
       if (window.scrollY >= 400) {
-        if (chart.current !== null) {
+        if (chart.current != null) {
           chart.current.style = "opacity: 1";
           // how remove classlist pointer-events-none  ?
           chart.current.classList.remove("pointer-events-none");
         }
       } else {
-        if (chart.current !== null) {
+        if (chart.current != null) {
           chart.current.style = "opacity: 0";
           chart.current.classList.add("pointer-events-none");
         }
       }
       const scroll = window.scrollY;
       const scrollPercent = (scroll / max) * 100;
-      setScrollY(scrollPercent);
+      SetScrollY(scrollPercent);
     });
   }
-
-  // RETURN JSX
-  if (isWindow === true) {
+  // RETRUN JSX
+  if (isWindow == true) {
     return (
       <main>
         <progress
@@ -53,7 +65,7 @@ export default function index() {
         ></progress>
         <Navbar />
         <section
-          style={{ height: "100vh", display: "flex", alignItems: "center", backgroundColor: "white" }}
+          style={{ height: "100vh", display: "flex", alignItems: "center", backgroundColor : "white" }}
           className="w-100vw"
         >
           <motion.img
@@ -72,11 +84,11 @@ export default function index() {
           />
           <section className="prose">
             <h1 className="text-primary">
-              Life expectancy in the European Union
+              L'éspérance de vie dans l'union européenne
             </h1>
-            <p>Which country has the longest life expectancy?</p>
-            <p>What explains these differences?</p>
-            <p>What are the factors influencing life expectancy?</p>
+            <p>Dans quel pays vivons-nous le plus longtemps ? </p>
+            <p>Comment expliquer ces différences ?</p>
+            <p>Quels sont les facteurs influencant l'espérance de vie ?</p>
           </section>
         </section>
 
@@ -87,99 +99,123 @@ export default function index() {
           <Chart />
         </div>
         <section className="w-30vw m-5 prose mb-52">
-          <h2 className="text-primary">Mapping the European Union</h2>
+          <h2 className="text-primary">Cartographie de l'union européenne</h2>
           <p>
-            The map shows the countries of the European Union with different
-            color densities ranging from
-            <span className="text-primary"> green</span> (countries with high life expectancy) to
-            <span className="text-error"> pink</span> (countries with low life expectancy).
+            La carte nous montre les pays de l'Union Européenne sous différentes
+            densités de couleur allant du
+            <span className="text-primary"> vert</span>, les pays avec une
+            espérance de vie élevés au
+            <span className="text-error"> rose </span> au moins élevé.
           </p>
           <p>
-            The life expectancy data is from the year 2020 and is sourced from
-            the World Bank.
+            Les données sur l'espérance de vie sont sur l'année 2020 et
+            proviennent de la banque mondiale.
           </p>
           <p>
-            You can interact with the map by hovering over the countries or by
-            adjusting the density bar in the legend.
+            Vous pouvez interagir avec la carte en passant sur les pays ou en
+            jouant avec {/* color: ["#eb9494", "#496552"], */}
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-red-200 to-green-900 font-bold">
+              la barre de densité{" "}
+            </span>
+            en légende.
           </p>
         </section>
         <section className="w-30vw m-5 prose  mb-52 ">
           <h2 className="text-primary">
-            Which country has the highest life expectancy?
+            Quel est le pays avec la plus grande espérance de vie ?
           </h2>
           <p>
-            According to data from the World Bank in 2020, the country with the
-            highest life expectancy is
-            <span className="text-primary"> Malta</span> with approximately
-            <span className="text-primary"> 82 years</span>, while the lowest life expectancy
-            is in
-            <span className="text-error"> Bulgaria</span> with approximately
-            <span className="text-error"> 72 years</span>.
+            D'après les données de la banque mondiale, en 2020, le pays avec la
+            plus grande espérance de vie est{" "}
+            <span className="text-primary">Malte</span> avec environ{" "}
+            <span className="text-primary">82 ans</span>, au contraire la
+            <span className="text-error"> Bulgarie</span> où l'espérance de vie
+            est la plus faible avec environ{" "}
+            <span className="text-error">72 ans</span>.
           </p>
           <p>
-            We can observe that countries in Northern Europe, such as
-            <span className="text-primary"> Denmark</span> and
-            <span className="text-primary"> Scandinavian countries</span>, have the highest life expectancy,
-            with averages of
-            <span className="text-primary"> 80 years</span> and above. In contrast,
-            Eastern European countries such as
-            <span className="text-error"> Bulgaria</span> and
-            <span className="text-error"> Romania</span> have lower life expectancies,
-            with averages of less than
-            <span className="text-error"> 75 years</span>. It is interesting to note
-            that the differences between countries are quite significant, with
-            gaps of over
-            <span className="font-bold"> 10 years</span> between some countries.
+            Nous pouvons constater que les pays du nord de l'Europe, comme le
+            <span className="text-primary"> Danemark</span> et{" "}
+            <span className="text-primary">les pays scandinaves</span> ont
+            l'espérance la plus élevée, avec des moyennes de{" "}
+            <span className="text-primary">80 ans</span> et plus. À l'inverse,
+            <span className="text-error">les pays de l'est</span> de l'Union
+            Européenne, comme la <span className="text-error"> Bulgarie</span>{" "}
+            et la <span className="text-error"> Roumanie</span>, ont des
+            espérances de vie plus faibles, avec des moyennes de moins de{" "}
+            <span className="text-error">75 ans</span>. Il est intéressant de
+            noter que les différences entre les pays sont assez marquées, avec
+            des écarts de plus de <span className="font-bold">10 ans </span>
+            entre certains pays.
           </p>
-          <h4>How can we explain these differences?</h4>
+          <h4>Comment expliquer cette différence ?</h4>
         </section>
         <section className="w-30vw m-5 prose   mb-52">
-          <h2 className="text-primary">GDP of the country</h2>
+          <h2 className="text-primary">Le PIB du pays</h2>
           <p>
-            Gross Domestic Product (GDP) is the economic indicator that
-            quantifies the total value of annual "wealth production" carried out
-            by economic agents (households, businesses, public administrations)
-            residing within a territory. GDP is the main indicator for measuring
-            the economic production within a country and one of the major
-            aggregates of national accounts. GDP reflects the internal economic
-            activity of a country, and the variation of GDP from one period to
-            another is supposed to measure its economic growth rate.
+            Le{" "}
+            <span className="text-cyan-600">
+              produit intérieur brut (PIB) est l'indicateur
+            </span>{" "}
+            économique qui permet de quantifier la valeur totale de la «
+            production de richesse » annuelle effectuée par les agents
+            économiques (ménages, entreprises, administrations publiques)
+            résidant à l'intérieur d'un territoire. Le{" "}
+            <span className="text-cyan-600">PIB</span>
+            est le principal indicateur de la mesure de la production économique
+            réalisée à l’intérieur d'un pays et l'un des agrégats majeurs des
+            comptes nationaux. Le <span className="text-cyan-600">
+              PIB
+            </span>{" "}
+            reflète donc l'activité économique interne d'un pays et la variation
+            du <span className="text-cyan-600">PIB</span> d'une période à
+            l'autre est censée mesurer son taux de croissance économique.
           </p>
           <p>
-            We can see that GDP is linked to life expectancy. In fact, countries
-            with the lowest GDP have the lowest life expectancy, such as
-            <span className="text-error"> Latvia</span> and
-            <span className="text-error"> Hungary</span>. On the other hand,
-            countries with higher GDPs such as
-            <span className="text-primary"> France</span> and
-            <span className="text-primary"> Sweden</span> have higher life
-            expectancies.
+            Nous pouvons constater que le{" "}
+            <span className="text-cyan-600">PIB</span> et l'espérance de vie son
+            lié. En effet, les pays ayant les
+            <span className="text-cyan-600"> PIB</span> les plus faibles ont
+            l'espérance de vie la plus basse comme la{" "}
+            <span className="text-error">Lettonie</span> et la{" "}
+            <span className="text-error">Hongrie</span>. Mais, les pays avec un
+            PIB plus élevé comme la <span className="text-primary">France</span>{" "}
+            ou la <span className="text-primary">Suède</span> ont une espérance
+            de vie plus élevé.
           </p>
           <p>
-            The data is from 2020 and comes from the World Bank's national
-            accounts and OECD national accounts data files.
+            Les données sont datées de 2020 et proviennet des comptes nationaux
+            de la Banque mondiale et des fichiers de données sur les comptes
+            nationaux de l'OCDE.
           </p>
         </section>
         <section className="w-30vw m-5 prose   mb-52">
           <h2 className="text-primary">
-            HDI - Human Development Index
+            IDH - L'indice de développement humain
           </h2>
           <p>
-            The Human Development Index (HDI) is an indicator that demonstrates
-            investment in human capital, which is the population's investment in
-            terms of survival, education, and health.
+            L'
+            <span className="text-indigo-700">
+              indice de développement humain (IDH)
+            </span>{" "}
+            est un indicateur démontrant l'investissement dans le capital humain
+            c'est-à-dire dans la population, se mesure par la survie, la
+            scolarité et la santé.
           </p>
           <p>
-            Similar to GDP, HDI also influences life expectancy, although there
-            are some exceptions such as
-            <span className="text-primary"> Luxembourg</span> with a low HDI
-            compared to its life expectancy or the reverse case of
-            <span className="text-error"> Poland</span> having a high HDI but
-            slightly lower life expectancy.
+            Tout comme pour le <span className="text-cyan-600">PIB</span>, l'
+            <span className="text-indigo-700">IDH</span> influe sur l'éspérance
+            de vie, malgré quelques exceptions comme le{" "}
+            <span className="text-primary">Luxembourg</span> ayant un{" "}
+            <span className="text-indigo-700">IDH</span> faible comparé à son
+            éspérance de vie ou l'inverse, la{" "}
+            <span className="text-error">Pologne</span> ayant un{" "}
+            <span className="text-indigo-700">IDH </span>
+            élevé mais une espérance de vie un peu plus faible.
           </p>
           <p>
-            Calculations are based on World Bank services using the methodology
-            described in  {" "}
+            Calculs des services de la Banque mondiale, à partir de la
+            méthodologie décrite dans{" "}
             <Link
               target="_blank"
               href="https://documents.worldbank.org/en/publication/documents-reports/documentdetail/300071537907028892/methodology-for-a-world-bank-human-capital-index"
@@ -191,34 +227,40 @@ export default function index() {
         </section>
         <section className="w-30vw m-5 prose mb-52">
           <h2 className="text-primary">
-            People using safely managed sanitation services
+            Personnes utilisant des services d'assainissement gérés en toute
+            sécurité
           </h2>
           <p>
-            People using
-            <span className="text-rose-800"> safely managed sanitation </span>
-            services. Specifically, the chart shows the percentage of people
-            using improved sanitation facilities that are not shared with other
-            households and where excreta are safely disposed of in situ or
-            transported and treated off-site. Improved sanitation facilities
-            include flush/pour-flush toilets connected to sewer systems,
-            septic tanks, or latrines with a slab: ventilated improved pit
-            latrines, pit latrines with a slab, or composting toilets.
+            Personnes utilisant des services d'
+            <span className="text-rose-800">assainissement</span> gérés en toute
+            sécurité. Plus précisement le graphique montre le pourcentages de
+            personnes utilisant des installations sanitaires améliorées qui ne
+            sont pas partagées avec d'autres ménages et où les excréments sont
+            éliminés en toute sécurité sur place ou transportés et traités hors
+            site. Les installations d'
+            <span className="text-rose-800">assainissement</span> améliorées
+            comprennent les chasses d'eau/à chasse d'eau vers les réseaux
+            d'égouts, les fosses septiques ou les latrines à fosse : les
+            latrines à fosse ventilées améliorées, les toilettes mixtes ou les
+            latrines à fosse avec dalles.
           </p>
 
           <p>
-            The percentages of people using improved sanitation facilities are
-            generally related to life expectancy. There are some exceptions,
-            such as
-            <span className="text-primary"> France</span> and
-            <span className="text-primary"> Portugal</span> having high life
-            expectancies but relatively poorer sanitation. Another exception is
-            <span className="text-error"> Lithuania</span> which has a low life
-            expectancy but good sanitation.
+            Les pourcentages de personnes utilisant des installations sanitaires
+            améliorées sont globalement liés à l'espérance de vie. Hormis
+            quelques exceptions comme la{" "}
+            <span className="text-primary">France</span> et le{" "}
+            <span className="text-primary">Portugal</span> ayant une espérance
+            de vie élevéz mais un{" "}
+            <span className="text-rose-800">assainissement</span> moins bon. Ou
+            la <span className="text-error">Lituanie</span> qui a une espérance
+            de vie faible mais un bon{" "}
+            <span className="text-rose-800">assainissement</span>.
           </p>
 
           <p>
-            The data is from the World Bank in 2020, specifically the WHO/UNICEF
-            Joint Monitoring Programme (JMP) for {" "}
+            Donnée de la Banque mondiale datant de 2020, plus précisement
+            WHO/UNICEF Joint Monitoring Programme (JMP) for{" "}
             <Link target="_blank" href="https://washdata.org/">
               Water Supply, Sanitation and Hygiene
             </Link>

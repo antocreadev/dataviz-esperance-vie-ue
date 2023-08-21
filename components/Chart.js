@@ -16,59 +16,6 @@ export default function ChartGlobalLifeSpanInEU() {
   const [options, setOptions] = useState({});
 
   // ----- FUNCTION -----
-  // GET ALL VALUES BY COUNTRIES
-  const allValuesByCountries = useMemo(() => {
-    const DATA = data.Root.data.record;
-    const tab = [];
-    DATA.map((item) => {
-      item.field[0]["#text"] ? tab.push(item.field[0]["#text"]) : null;
-    });
-    let different = [];
-    // Parcours du tableau d'entrée
-    for (let i = 0; i < tab.length; i++) {
-      // Si l'élément courant n'est pas dans le nouveau tableau, on l'ajoute
-      if (!different.includes(tab[i])) {
-        different.push(tab[i]);
-      }
-    }
-    // On retourne le nouveau tableau
-    return different;
-  }, [data]);
-  // GET ALL VALUES SORTED BY VALUE 2020
-  const allValuesByValue2020 = useMemo(() => {
-    const DATA = data.Root.data.record;
-    const tab = [];
-    DATA.map((item) => {
-      item.field[2]["#text"] === "2020"
-        ? tab.push(item.field[3]["#text"])
-        : null;
-    });
-    return tab;
-  }, [data]);
-  // GET ALL VALUES DATES SORTED BY DATE
-  const allDate = useMemo(() => {
-    const DATA = data.Root.data.record;
-    const tab = [];
-    DATA.map((item) => {
-      item.field[2]["#text"] ? tab.push(item.field[2]["#text"]) : null;
-    });
-    let different = [];
-    // Parcours du tableau d'entrée
-    for (let i = 0; i < tab.length; i++) {
-      // Si l'élément courant n'est pas dans le nouveau tableau, on l'ajoute
-      if (!different.includes(tab[i])) {
-        different.push(tab[i]);
-      }
-      // On retourne le nouveau tableau
-      return different;
-    }
-  }, [data]);
-  // GET ALL VALUES SORTED BY VALUE 2020 from the smallest to the biggest
-  const allValuesByValue2020Sorted = useMemo(() => {
-    const DATA = data.Root.data.record;
-    const tab = [];
-    return tab.sort((a, b) => a - b);
-  }, [data]);
   // format data for the chart with the value 2020 sorted and the name of the country
   const formatData = useMemo(() => {
     const DATA = data.Root.data.record;
@@ -132,7 +79,6 @@ export default function ChartGlobalLifeSpanInEU() {
   ];
   const dataPibByCountry = useMemo(() => {
     const DATA_PIB = dataPib.Root.data.record;
-    const DATA = data.Root.data.record;
     const tab = [];
     DATA_PIB.map((item) => {
       Contries_tab.map((country) => {
@@ -181,7 +127,6 @@ export default function ChartGlobalLifeSpanInEU() {
 
   // --- SETOPTION ---
   useEffect(() => {
-    const DATA = data.Root.data.record;
     // SET OPTION
     const OPTION_BAR_LIFE_SPAN = {
       visualMap: {
@@ -194,7 +139,7 @@ export default function ChartGlobalLifeSpanInEU() {
       },
       title: {
         show: true,
-        text: "Life expectancy in Europe",
+        text: "Espérance de vie dans l'Union européenne",
         subtext: "donnees.banquemondiale.org",
         sublink:
           "https://donnees.banquemondiale.org/indicateur/SP.DYN.LE00.IN?locations=EU",
@@ -254,7 +199,7 @@ export default function ChartGlobalLifeSpanInEU() {
       },
       title: {
         show: false,
-        text: "Life expectancy in Europe",
+        text: "Espérance de vie dans l'Union européenne",
         subtext: "donnees.banquemondiale.org",
         sublink:
           "https://donnees.banquemondiale.org/indicateur/SP.DYN.LE00.IN?locations=EU",
@@ -323,7 +268,7 @@ export default function ChartGlobalLifeSpanInEU() {
       },
       title: {
         show: false,
-        text: "Life expectancy in Europe",
+        text: "Espérance de vie dans l'Union européenne",
         subtext: "donnees.banquemondiale.org",
         sublink:
           "https://donnees.banquemondiale.org/indicateur/SP.DYN.LE00.IN?locations=EU",
@@ -394,7 +339,7 @@ export default function ChartGlobalLifeSpanInEU() {
         },
       ],
       title: {
-        text: "Life expectancy in Europe",
+        text: "Espérance de vie dans l'Union européenne",
         subtext: "donnees.banquemondiale.org",
         sublink:
           "https://donnees.banquemondiale.org/indicateur/SP.DYN.LE00.IN?locations=EU",
@@ -431,7 +376,7 @@ export default function ChartGlobalLifeSpanInEU() {
 
       series: [
         {
-          name: "Life expectancy",
+          name: "L'espérance de vie",
           animationDurationUpdate: 1500,
           universalTransition: true,
           type: "map",
@@ -463,7 +408,7 @@ export default function ChartGlobalLifeSpanInEU() {
       },
       title: {
         show: false,
-        text: "Life expectancy in Europe",
+        text: "Espérance de vie dans l'Union européenne",
         subtext: "donnees.banquemondiale.org",
         sublink:
           "https://donnees.banquemondiale.org/indicateur/SP.DYN.LE00.IN?locations=EU",
