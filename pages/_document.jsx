@@ -19,6 +19,7 @@ class MyDocument extends Document {
           <meta name="copyright" content="Anthony Menghi & Anto CreaDev" />
           <meta name="robots" content="index" />
           <title>DataViz - Espérance de vie | Anto CreaDev </title>
+          <link rel="icon" type="image/png" href="/icon.png" />
         </Head>
         <body data-theme="garden">
           <Main />
